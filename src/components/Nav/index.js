@@ -1,10 +1,13 @@
 import React from 'react';
-import Logo from '../../assests/imgs/DB_Logo.pdf';
 
 //Material UI Imports
-import Box from '@mui/material/Box';
 
-//array map over the pages in the header so we can link the pages anywhere in our code
+
+//Import images
+import Logo from '../../assests/imgs/nav-header.svg'
+import { CardMedia } from '@mui/material';
+
+//array map over the pages in the header so we can link the pages in the code
 const pages = [
     {
         name:"FAQ",
@@ -13,6 +16,14 @@ const pages = [
     {
         name:"About",
         description: "Meet the team page",
+    },
+    { 
+        name:"Payer",
+        description:"Page for Payer information"
+},
+    {
+        name:"Physician",
+        description:"Page for Physician information"
     }
 ];
 
@@ -25,32 +36,20 @@ function categorySelected(name) {
 
      return (
         <header>
-            <h2>
+             <h2>
                  <a href="/">
-                     <Box
+                     <CardMedia
                          component="img"
                          alt="Your logo."
-                         src={Logo}
+                         image={Logo}
                          //onClick={handlePageChange}
-                         sx={[{
-                             pr: 10,
-                             pt: 1,
-                             height: 80,
-                             width: 60,
-                             flexGrow: 1,
-                             display: { xs: 'flex', md: 'none' }
-                         }, {
-                             '&:hover': {
-                                 cursor: 'pointer'
-                             }
-                         }]}
                      >
-                     </Box>
+                     </CardMedia>
                  </a>
             </h2>
             <nav>
                 <ul className="flex-row">
-                    <li className="mx-2">
+                    <li>
                         <a href="#Home">
                             Home
                         </a> 
@@ -60,7 +59,7 @@ function categorySelected(name) {
                     </li> */}
                     {pages.map((category)=> (
                         <li
-                            className="mx-1"
+                            //className="mx-1"
                             key={category.name}
                         >
                         <span onClick={() => categorySelected(category.name)}>
