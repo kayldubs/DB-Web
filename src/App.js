@@ -6,6 +6,7 @@ import './App.css';
 import Home from './components/Home';
 import Nav from './components/Nav';
 import Features from './components/Features';
+import ContactForm from './components/Contact';
 // import Payer from './components/Payer';
 // import Physician from './components/Physician';
 // import Footer from './components/Footer';
@@ -80,6 +81,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
                 </div>
               </Home>
               <Features currentCategory={currentCategory}></Features>
+              <ContactForm></ContactForm>
             </main>
             {/* <Route exact path="/Payer" component={Payer} /> */}
             {/* <Route exact path="/Physician" component={Physician} /> */}
