@@ -1,5 +1,8 @@
 import React from 'react';
-//import Logo from '../../assests/imgs/DB_Logo.pdf';
+import Logo from '../../assests/imgs/DB_Logo.pdf';
+
+//Material UI Imports
+import Box from '@mui/material/Box';
 
 //array map over the pages in the header so we can link the pages anywhere in our code
 const pages = [
@@ -23,9 +26,27 @@ function categorySelected(name) {
      return (
         <header>
             <h2>
-                <a href="/">
-                    <span role='logo'>DigiBeat</span>
-                </a>
+                 <a href="/">
+                     <Box
+                         component="img"
+                         alt="Your logo."
+                         src={Logo}
+                         //onClick={handlePageChange}
+                         sx={[{
+                             pr: 10,
+                             pt: 1,
+                             height: 80,
+                             width: 60,
+                             flexGrow: 1,
+                             display: { xs: 'flex', md: 'none' }
+                         }, {
+                             '&:hover': {
+                                 cursor: 'pointer'
+                             }
+                         }]}
+                     >
+                     </Box>
+                 </a>
             </h2>
             <nav>
                 <ul className="flex-row">
@@ -34,9 +55,9 @@ function categorySelected(name) {
                             Home
                         </a> 
                     </li>
-                    <li>
+                    {/* <li>
                         <span>FAQ</span>
-                    </li>
+                    </li> */}
                     {pages.map((category)=> (
                         <li
                             className="mx-1"
@@ -47,9 +68,9 @@ function categorySelected(name) {
                         </span>
                         </li> 
                     ))}
-                    <li>
+                    {/* <li>
                         <span>About</span>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
         </header>
