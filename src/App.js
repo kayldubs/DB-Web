@@ -1,5 +1,5 @@
 //import Logo from './assests/imgs/DB_Logo.pdf';
-import React from 'react';
+import React, { useState } from 'react';
 // import { BrowserRouter as Routes, Route, Router } from 'react-router-dom';
 import './App.css';
 //import components
@@ -46,14 +46,32 @@ import Features from './components/Features';
 
 
 function App() {
-
+  const [categories]= useState([
+    {
+        name:"FAQ",
+        description: "Text page of frequently asked questions about digibeat",
+    },
+    {
+        name:"About",
+        description: "Meet the team page",
+    },
+    { 
+        name:"Payer",
+        description:"Page for Payer information"
+},
+    {
+        name:"Physician",
+        description:"Page for Physician information"
+    }
+]);
+const [currentCategory, setCurrentCategory] = useState(categories[0]);
   return(
   // <ApolloProvider client={client}>
   //  <Router>
     <div className='App'>
       {/* <ThemeProvider theme={theme}> */}
         {/* <Provider store={store}> */}
-          <Nav />
+          <Nav></Nav>
           {/* <Routes> */}
             <main>
               <Home>
@@ -61,7 +79,7 @@ function App() {
                   <img src='../../assests/imgs/DB_Logo' alt="Digibeat Logo.pdf" className="Carousel-Place-Holder"/>
                 </div>
               </Home>
-              <Features></Features>
+              <Features currentCategory={currentCategory}></Features>
             </main>
             {/* <Route exact path="/Payer" component={Payer} /> */}
             {/* <Route exact path="/Physician" component={Physician} /> */}

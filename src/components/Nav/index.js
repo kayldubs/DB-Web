@@ -1,41 +1,31 @@
 import React from 'react';
+//import { capitalizeFirstLetter } from '../utils/helpers';
 
 //Material UI Imports
 
 
 //Import images
-import Logo from '../../assests/imgs/nav-header.svg'
+import Logo from '../../assests/imgs/nav-header.svg';
 import { CardMedia } from '@mui/material';
 
-//array map over the pages in the header so we can link the pages in the code
-const pages = [
-    {
-        name:"FAQ",
-        description: "Text page of frequently asked questions about digibeat",
-    },
-    {
-        name:"About",
-        description: "Meet the team page",
-    },
-    { 
-        name:"Payer",
-        description:"Page for Payer information"
-},
-    {
-        name:"Physician",
-        description:"Page for Physician information"
-    }
-];
+ function Nav(props) {
+//start Nav functionality using useState - see useState in App.js
+const {
+    categories = [],
+    setCurrentCategory,
+    currentCategory,
+  } = props;
 
-function categorySelected(name) {
-    console.log(`${name} clicked`)
-}
-
- function Nav() {
-//     const classes = useStyles();
+  const handleClick = (item) => {
+    console.log(item);
+    return item;
+  };
+//   useEffect(() => {
+//     document.title = capitalizeFirstLetter(currentCategory.name)
+// }, [currentCategory]);
 
      return (
-        <header>
+        <header className="flex-row px-1">
              <h2>
                  <a href="/">
                      <CardMedia
@@ -49,27 +39,33 @@ function categorySelected(name) {
             </h2>
             <nav>
                 <ul className="flex-row">
-                    <li>
+                    <li className={"mx-2"}>
                         <a href="#Home">
                             Home
                         </a> 
                     </li>
-                    {/* <li>
-                        <span>FAQ</span>
-                    </li> */}
-                    {pages.map((category)=> (
+                    <li className={"mx-2"}>
+            <span onClick={() => handleClick('About')}>
+              About
+            </span>
+            <li className={"mx-2"}>
+            <span onClick={() => handleClick('FAQ')}>
+              FAQ
+            </span>
+            </li>
+            </li>
+                    {categories.map((category)=> (
                         <li
-                            //className="mx-1"
+                            className={`mx-1 ${
+                            currentCategory.name === category.name
+                            }`}
                             key={category.name}
                         >
-                        <span onClick={() => categorySelected(category.name)}>
-                            {category.name}
+                        <span onClick={() => {setCurrentCategory(category)}}
+                        >
                         </span>
                         </li> 
                     ))}
-                    {/* <li>
-                        <span>About</span>
-                    </li> */}
                 </ul>
             </nav>
         </header>
