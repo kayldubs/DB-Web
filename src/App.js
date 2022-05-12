@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 // import { BrowserRouter as Routes, Route, Router } from 'react-router-dom';
 import './App.css';
-//import components
+//import components(pages to then insert into the return JXS function)
 import Home from './components/Home';
 import Nav from './components/Nav';
 import Features from './components/Features';
@@ -10,6 +10,9 @@ import ContactForm from './components/Contact';
 // import Payer from './components/Payer';
 // import Physician from './components/Physician';
 // import Footer from './components/Footer';
+
+//import CSS Boostrap 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Set up Apollo and GraphQL
 // import {

@@ -12,6 +12,7 @@ import AI from '../../assests/imgs/aiVactor.svg';
 import Telemedical from '../../assests/imgs/teleVector.svg';
 import Record from '../../assests/imgs/recordVector.svg';
 import Demand from '../../assests/imgs/demandVector.svg';
+import { right } from '@popperjs/core';
 
 //custom classes for styling
 const useStyles = makeStyles((theme) => ({
@@ -24,7 +25,8 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
   },
   rightGrid:{
-    padding: "30px",
+    flexDirection:right,
+
   }
 }));
 
@@ -33,7 +35,7 @@ function Features() {
   return (
     <Paper>
       <h1>Key Features</h1>
-      <Card className={classes.featureCard}>
+      <Card className={classes.featureCard} varient="outlined" class="col-lg-6">
         <h1>The future of medical examinations</h1>
         <h2>Goodbye Analog, Hello Digital</h2>
         <p>Digibeat offers an innovative improvement to the traditional stethoscope exam.</p>
@@ -42,8 +44,8 @@ function Features() {
         <h2>Doctor Designed, Patient Approved</h2>
         <p>Made with a physician's workflow in mind, reliability and ease of use are heavily emphasized in it's construction.</p>
       </Card>
-      <Container>
-      <Grid className={classes.rightGrid}>
+      <Container className={classes.rightGrid} class="row">
+      <Grid class="col-lg-6">
         <Card>
         <h2>Telemedical Ready</h2>
         <CardMedia
