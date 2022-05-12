@@ -2,11 +2,11 @@ import React from 'react';
 //import { capitalizeFirstLetter } from '../utils/helpers';
 
 //Material UI Imports
-
+import { CardMedia } from '@mui/material';
 
 //Import images
 import Logo from '../../assests/imgs/nav-header.svg';
-import { CardMedia } from '@mui/material';
+
 
  function Nav(props) {
 //start Nav functionality using useState - see useState in App.js
