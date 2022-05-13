@@ -10,12 +10,4 @@ code {
     monospace;
 }
 
-:root {
-  --navy: rgb(72,98,144);
-  --midBlue: rgb(39,170,225);
-  --black: rgb(0,0,0);
-  --greyBlue:rgb(106,138,175);
-  --offWhite: rgb(226,232,221);
-  --warmTaupe: rgb(205,198,174);
-}
 

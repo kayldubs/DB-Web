@@ -55,7 +55,7 @@ if (!Array.isArray(slides) || slides.length <= 0) {
 }
 
     return (
-        <Paper>
+    <Paper>
         <h1 className={classes.keyFeatures}>Key Features</h1>
       <Card varient="outlined" col-lg-6>
         <h1 className={classes.featureCard}>The future of medical examinations</h1>

@@ -1,10 +1,24 @@
 import React, {useState} from 'react';
 //import { validateEmail } from '../../utils/helpers';
+//Material imports 
+import { makeStyles } from '@material-ui/core/styles';
 
-
+const useStyles = makeStyles((theme) => ({
+    contactForm: {
+      fontFamily: 'Metropolis',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'left',
+      paddingRight: '70px',
+      margin: '40px',
+      borderRadius: '10px',
+      borderColor: '#486290'
+    },
+  
+  }));
 
 function ContactForm() {
-    
+    const classes = useStyles();
     const [formState, setFormState] = useState({ name: '', email: '', organization:'', jobTitle: ''});
     const { name, email, jobTitle, organization  } = formState;
     function handleSubmit(e) {
@@ -16,9 +30,9 @@ function ContactForm() {
       }
       
 return (
-    <section>
+    <section className="contact-form">
         <h1>Interested in trying DigiBeat?</h1>
-        <form id="contact-form" onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
             <div> 
                 <label htmlFor="name">Full Name:</label>
                 <input type="text" defaultValue={name} onChange={handleChange} name="name" />

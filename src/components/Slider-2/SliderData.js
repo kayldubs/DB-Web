@@ -1,17 +1,19 @@
-
-
+import DB1 from '../../assests/imgs/DB-1.svg';
+import DB2 from '../../assests/imgs/DB-2.svg';
+import DB3 from '../../assests/imgs/DB-3.svg';
+import DB4 from '../../assests/imgs/DB-4.svg';
 
 export const SliderData = [
     {
-        image:'../../src/assets/imgs/DB-1.png'
+        photo:{DB1}
     },
     {
-        image:'../.../src/assets/imgs/DB-2.png'
+        photo:{DB2}
     },
     {
-        image:'../../src/assets/imgs/DB-3.png'
+        photo:{DB3}
     },
     {
-        image: '../../src/assets/imgs/DB-4.png'
+        photo:{DB4}
     }
-]
+];

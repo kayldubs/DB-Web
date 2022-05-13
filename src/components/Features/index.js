@@ -26,7 +26,8 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     paddingRight: '70px',
-    margin: '40px',
+    marginRight: '40px',
+    marginTop: '40px',
   },
 
 }));
@@ -47,7 +48,6 @@ function Features() {
             />
             <p>Optimize your remote patient care practices.
             </p>
-            <br></br>
             <br></br>
             <br></br>
             <br></br>
