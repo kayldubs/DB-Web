@@ -2,7 +2,7 @@ import React from 'react';
 //import { capitalizeFirstLetter } from '../utils/helpers';
 
 //Material UI Imports
-import { CardMedia } from '@mui/material';
+import { Card, CardMedia } from '@mui/material';
 
 //Import images
 import Logo from '../../assests/imgs/nav-header.svg';
@@ -25,18 +25,19 @@ const {
 // }, [currentCategory]);
 
      return (
-        <header className="flex-row px-1">
-             <h2>
+        <header className="">
+             <Card>
                  <a href="/">
                      <CardMedia
                          component="img"
                          alt="Your logo."
                          image={Logo}
+                         width='100wh'
                          //onClick={handlePageChange}
                      >
                      </CardMedia>
                  </a>
-            </h2>
+            </Card>
             <nav>
                 <ul className="flex-row">
                     <li className={"mx-2"}>

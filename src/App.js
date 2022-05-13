@@ -7,12 +7,17 @@ import Home from './components/Home';
 import Nav from './components/Nav';
 import Features from './components/Features';
 import ContactForm from './components/Contact';
+import ImageSlider from './components/Slider-2/ImageSlider';
+import { SliderData } from './components/Slider-2/SliderData';
 // import Payer from './components/Payer';
 // import Physician from './components/Physician';
 // import Footer from './components/Footer';
 
 //import CSS Boostrap 
 import 'bootstrap/dist/css/bootstrap.min.css';
+//import Expletus Sans Font
+import "@fontsource/expletus-sans"
+
 
 //Set up Apollo and GraphQL
 // import {
@@ -83,6 +88,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
                   <img src='../../assests/imgs/DB_Logo' alt="Digibeat Logo.pdf" className="Carousel-Place-Holder"/>
                 </div>
               </Home>
+              <ImageSlider slides={SliderData}></ImageSlider>
               <Features currentCategory={currentCategory}></Features>
               <ContactForm></ContactForm>
             </main>
