@@ -61,15 +61,7 @@ body {
   user-select: none;
 }
 
-/* .feature-subtext {
-  padding: 0px;
-      margin: 50px;
-      max-width: 50%;
-      height: 100%;
-      
-      font-size:'18px';
-      font-family:'Metropolis';
-} */
+/* end syling */
 
 
 /* start hero carousel styling */
@@ -159,4 +151,12 @@ outline: none;
 
 .h2 {
 margin-bottom: 20px;
+}
+
+.nav-logo {
+  max-width: 30%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
 }

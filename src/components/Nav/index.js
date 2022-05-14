@@ -26,20 +26,30 @@ const {
 // }, [currentCategory]);
 
      return (
-        <header className="">
-             
-            <nav className="links">
-                <ul className="flex-row">
-                    <li className={"mx-2"}>
+        
+        <header>
+             <Card>
+            <nav className="links row">
+            <a href="/" >
+                     <CardMedia className='nav-logo'
+                         component="img"
+                         alt="Your logo."
+                         image={Logo}
+                         //onClick={handlePageChange}
+                     >
+                     </CardMedia>
+                 </a>
+                <ul className="col-lg-12">
+                    <li>
                         <a href="#Home">
                             Home
                         </a> 
                     </li>
-                    <li className={"mx-2"}>
+                    <li>
             <span onClick={() => handleClick('About')}>
               About
             </span>
-            <li className={"mx-2"}>
+            <li>
             <span onClick={() => handleClick('FAQ')}>
               FAQ
             </span>
@@ -47,7 +57,7 @@ const {
             </li>
                     {categories.map((category)=> (
                         <li
-                            className={`mx-1 ${
+                            className={` ${
                             currentCategory.name === category.name
                             }`}
                             key={category.name}
@@ -57,20 +67,12 @@ const {
                         </span>
                         </li> 
                     ))}
-                <Card>
-                 <a href="/" >
-                     <CardMedia className='nav-logo'
-                         component="img"
-                         alt="Your logo."
-                         image={Logo}
-                         width="50%"
-                         //onClick={handlePageChange}
-                     >
-                     </CardMedia>
-                 </a>
-            </Card>
+                
+                 
+            
                 </ul>
             </nav>
+            </Card>
         </header>
     );
 }
