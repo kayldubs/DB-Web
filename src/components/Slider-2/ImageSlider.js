@@ -11,26 +11,24 @@ import { Container, Grid } from '@mui/material';
 
 const useStyles = makeStyles((theme) => ({
     featureCard: {
-      margin: '50px',
-      maxWidth: '50%',
-      height: "100%",
-      //backgroundColor:'#486290',
       fontSize:'40px',
       fontFamily:'Expletus Sans',
+      paddingTop: '30px'
     },
     featureSubtext: {
-      padding: "0px",
-      margin: '50px',
+      paddingTop: "80px",
+      margin: 'auto',
       maxWidth: '50%',
       height: "100%",
       //backgroundColor:'#486290',
-      fontSize:'24px',
+      fontSize:'18px',
       fontFamily:'Metropolis',
     },
     keyFeatures: {
         fontFamily:'Expletus Sans',
         fontWeight:'Bold',
-        fontSize:'48px'
+        fontSize:'48px',
+        margin:'30px',
     
       }
 }))
@@ -55,9 +53,9 @@ if (!Array.isArray(slides) || slides.length <= 0) {
 }
 
     return (
-    <Paper>
+    <Paper className='row'>
         <h1 className={classes.keyFeatures}>Key Features</h1>
-      <Card varient="outlined" col-lg-6>
+      <Card varient="outlined" className='col-lg-6'>
         <h1 className={classes.featureCard}>The future of medical examinations</h1>
         <div className={classes.featureSubtext}>
         <h2>Goodbye Analog, Hello Digital</h2>
@@ -68,7 +66,8 @@ if (!Array.isArray(slides) || slides.length <= 0) {
         <p>Made with a physician's workflow in mind, reliability and ease of use are heavily emphasized in it's construction.</p>
         </div>
       </Card>
-        <section className='slider'>
+      <br></br>
+        <Card className='slider col-lg-6'>
             <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
             <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
             {SliderData.map((slide, index) => {
@@ -80,7 +79,7 @@ if (!Array.isArray(slides) || slides.length <= 0) {
                 </div>
                 )
             })}
-        </section>
+        </Card>
         </Paper>
     )
 }

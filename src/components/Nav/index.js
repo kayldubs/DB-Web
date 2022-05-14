@@ -3,6 +3,7 @@ import React from 'react';
 
 //Material UI Imports
 import { Card, CardMedia } from '@mui/material';
+//import IconButton from '@mui/material/IconButton';
 
 //Import images
 import Logo from '../../assests/imgs/nav-header.svg';
@@ -26,19 +27,8 @@ const {
 
      return (
         <header className="">
-             <Card>
-                 <a href="/">
-                     <CardMedia
-                         component="img"
-                         alt="Your logo."
-                         image={Logo}
-                         width='100wh'
-                         //onClick={handlePageChange}
-                     >
-                     </CardMedia>
-                 </a>
-            </Card>
-            <nav>
+             
+            <nav className="links">
                 <ul className="flex-row">
                     <li className={"mx-2"}>
                         <a href="#Home">
@@ -67,6 +57,18 @@ const {
                         </span>
                         </li> 
                     ))}
+                <Card>
+                 <a href="/" >
+                     <CardMedia className='nav-logo'
+                         component="img"
+                         alt="Your logo."
+                         image={Logo}
+                         width="50%"
+                         //onClick={handlePageChange}
+                     >
+                     </CardMedia>
+                 </a>
+            </Card>
                 </ul>
             </nav>
         </header>

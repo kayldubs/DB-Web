@@ -9,6 +9,8 @@ import Features from './components/Features';
 import ContactForm from './components/Contact';
 import ImageSlider from './components/Slider-2/ImageSlider';
 import { SliderData } from './components/Slider-2/SliderData';
+import ImageHero from './components/Carousel/ImageHero';
+import { HeroData } from './components/Carousel/HeroData';
 // import Payer from './components/Payer';
 // import Physician from './components/Physician';
 // import Footer from './components/Footer';
@@ -83,11 +85,8 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
           <Nav></Nav>
           {/* <Routes> */}
             <main>
-              <Home>
-                <div>
-                  <img src='../../assests/imgs/DB_Logo' alt="Digibeat Logo.pdf" className="Carousel-Place-Holder"/>
-                </div>
-              </Home>
+              <Home></Home>
+              <ImageHero slides={HeroData}></ImageHero>
               <ImageSlider slides={SliderData}></ImageSlider>
               <Features currentCategory={currentCategory}></Features>
               <ContactForm></ContactForm>
