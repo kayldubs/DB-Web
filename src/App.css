@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 ul { 
   list-style: none;
@@ -27,6 +25,7 @@ body {
   position:relative;
   display: flex;
   flex-direction: row;
+  
 }
 
 .image {
@@ -60,6 +59,10 @@ body {
   cursor: pointer;
   user-select: none;
 }
+
+/* .info-plane {
+  margin-right: 5px;
+} */
 
 /* end syling */
 
@@ -152,11 +155,12 @@ outline: none;
 .h2 {
 margin-bottom: 20px;
 }
+/* start navBar */
 
-.nav-logo {
+/* .navbar-logo {
   max-width: 30%;
   position: relative;
   display: flex;
   flex-direction: row;
   margin: auto;
-}
+} */

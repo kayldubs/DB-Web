@@ -2,18 +2,22 @@ import React, { useState } from 'react';
 import { SliderData } from './SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 //Material UI Imports 
-import CardMedia from '@mui/material/CardMedia';
+
 import Card from '@mui/material/Card';
 import Paper from '@mui/material/Paper';
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Grid } from '@mui/material';
+
 
 
 const useStyles = makeStyles((theme) => ({
     featureCard: {
-      fontSize:'40px',
+      fontSize:'40px', 
       fontFamily:'Expletus Sans',
-      paddingTop: '30px'
+      paddingTop: '50px',
+      margin: 'auto',
+      display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     featureSubtext: {
       paddingTop: "80px",
@@ -28,7 +32,11 @@ const useStyles = makeStyles((theme) => ({
         fontFamily:'Expletus Sans',
         fontWeight:'Bold',
         fontSize:'48px',
-        margin:'30px',
+        padding: '70px',
+        margin: 'auto',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
     
       }
 }))
@@ -53,9 +61,9 @@ if (!Array.isArray(slides) || slides.length <= 0) {
 }
 
     return (
-    <Paper className='row'>
+    <Paper className='row slider'>
         <h1 className={classes.keyFeatures}>Key Features</h1>
-      <Card varient="outlined" className='col-lg-6'>
+      <Card varient="outlined" className='col-lg-6 info-plane'>
         <h1 className={classes.featureCard}>The future of medical examinations</h1>
         <div className={classes.featureSubtext}>
         <h2>Goodbye Analog, Hello Digital</h2>

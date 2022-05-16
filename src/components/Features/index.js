@@ -15,6 +15,7 @@ import AI from '../../assests/imgs/aiVactor.svg';
 import Telemedical from '../../assests/imgs/teleVector.svg';
 import Record from '../../assests/imgs/recordVector.svg';
 import Demand from '../../assests/imgs/demandVector.svg';
+
 //import { borderRadius, fontWeight } from '@material-ui/system';
 
 
@@ -25,9 +26,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-evenly',
-    paddingRight: '70px',
-    marginRight: '40px',
-    marginTop: '40px',
+    margin: 'auto'
   },
 
 }));
