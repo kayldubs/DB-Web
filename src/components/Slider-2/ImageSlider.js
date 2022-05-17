@@ -17,14 +17,16 @@ const useStyles = makeStyles((theme) => ({
       margin: 'auto',
       display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        textDecoration: 'underline',
+        textDecorationColor: '#27AAE1',
     },
     featureSubtext: {
       paddingTop: "80px",
       margin: 'auto',
       maxWidth: '50%',
       height: "100%",
-      //backgroundColor:'#486290',
+      textAlign: 'center',
       fontSize:'18px',
       fontFamily:'Metropolis',
     },
@@ -36,7 +38,9 @@ const useStyles = makeStyles((theme) => ({
         margin: 'auto',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        textDecoration: 'underline',
+        textDecorationColor: '#486290'
     
       }
 }))
@@ -75,7 +79,7 @@ if (!Array.isArray(slides) || slides.length <= 0) {
         </div>
       </Card>
       <br></br>
-        <Card className='slider col-lg-6'>
+        <Card className='col-lg-6 slider'>
             <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
             <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
             {SliderData.map((slide, index) => {

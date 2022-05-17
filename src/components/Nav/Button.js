@@ -1,5 +1,4 @@
 import React from 'react';
-import ContactForm from '../Contact/index';
 import './Button.css';
 
 const STYLES = [
@@ -26,7 +25,7 @@ export const Button = ({
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]
 
     return (
-        <button href={ContactForm} className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
+        <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
             
         </button>
     )

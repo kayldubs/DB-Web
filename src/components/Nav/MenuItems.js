@@ -1,7 +1,6 @@
 //cName stands for class name 
 // Array of menu items to be displayed on the navbar 
 
-import ContactForm from "../Contact/index"
 
 export const MenuItems = [
     {
@@ -22,7 +21,7 @@ export const MenuItems = [
     //Mobile pop out
     {
         title: 'Sign Up',
-        url: '/contactForm',
+        url: 'contactForm',
         Cname:'nav-links'
     },
 ]

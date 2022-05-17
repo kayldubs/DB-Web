@@ -26,7 +26,8 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-evenly',
-    margin: 'auto'
+    margin: 'auto',
+    paddingRight: '20px'
   },
 
 }));
@@ -35,27 +36,26 @@ function Features() {
   const classes = useStyles();
   return (
     <Paper>
-      <Container >
+      <Container className='feature-body' >
         <Grid className={classes.rightGrid} fontSize='36px'>
-          <Card>
+          <Card class="col-lg-6">
             <h2>Telemedical Ready</h2>
             <CardMedia
               component="img"
               alt="heart with connections to DigiBeat Logo"
               image={Telemedical}
-              height='400'
+              height='430'
             />
+            <br></br>
             <p>Optimize your remote patient care practices.
             </p>
             <br></br>
-            <br></br>
-            <br></br>
-            <h2>AI-Driven Analysis</h2>
+            <h2 className='AI'>AI-Driven Analysis</h2>
             <CardMedia
               component="img"
               alt="heart with connections to DigiBeat Logo"
               image={AI}
-              height='400'
+              height='500'
             />
             <p>Realibly detect and analyze abnormalities before they become illness.</p>
           </Card>
@@ -66,10 +66,10 @@ function Features() {
               component="img"
               alt="heart with connections to DigiBeat Logo"
               image={Record}
-              height='400'
+              height='450'
             />
-            <p>Hear each beat with crystal clear playback quality, adjustable volume control, and noise eliminating technology.</p>
-            <br></br>
+            <p className='record-text'>Hear each beat with crystal clear playback quality, adjustable volume control, and noise eliminating technology.</p>
+        
             <h2>On Demand Exams</h2>
             <CardMedia
               component="img"
@@ -77,6 +77,7 @@ function Features() {
               image={Demand}
               height='450'
             />
+            <br></br>
             <p>Take patient exams with ease anytime, anywhere.</p>
           </Card>
         </Grid>

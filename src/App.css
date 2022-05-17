@@ -155,12 +155,31 @@ outline: none;
 .h2 {
 margin-bottom: 20px;
 }
-/* start navBar */
 
-/* .navbar-logo {
-  max-width: 30%;
-  position: relative;
+
+/*start features styling */
+
+.feature-body {
+  position:relative;
   display: flex;
-  flex-direction: row;
-  margin: auto;
-} */
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.feature-body p{
+  padding: 20px;
+}
+
+.feature-body h2 {
+  text-decoration:underline #486290;
+  text-underline-position: from-font;
+  font-weight: bold;
+  font-family: Expletus Sans; 
+}
+
+.AI {
+  padding-top: 18px;
+}
+
+
