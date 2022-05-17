@@ -6,7 +6,8 @@ import './App.css';
 import Home from './components/Home';
 import Nav from './components/Nav';
 import Features from './components/Features';
-import ContactForm from './components/Contact';
+// import ContactForm from './components/Contact';
+import Form from './components/Contact/Form';
 import ImageSlider from './components/Slider-2/ImageSlider';
 import { SliderData } from './components/Slider-2/SliderData';
 import ImageHero from './components/Carousel/ImageHero';
@@ -89,8 +90,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
               <ImageHero slides={HeroData}></ImageHero>
               <ImageSlider slides={SliderData}></ImageSlider>
               <Features currentCategory={currentCategory}></Features>
-              <ContactForm>
-              </ContactForm>
+              <Form></Form>
             </main>
             {/* <Route exact path="/Payer" component={Payer} /> */}
             {/* <Route exact path="/Physician" component={Physician} /> */}
