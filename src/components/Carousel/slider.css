@@ -1,0 +1,39 @@
+.current {
+    opacity: 1;
+}
+
+.content {
+    position: absolute;
+    top: 23rem;
+    /* left: 5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    margin-left: 20px;
+    padding: 3rem;
+    background: rgba(39, 170, 225, 0.4);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #C1C1C1;
+    animation: slide-up 1s ease 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-up {
+    0% {
+        visibility: visible;
+        top: 23rem;
+    }
+    100% {
+        visibility: visible;
+        top: 17rem;
+    }
+    
+}
+
+.content > * {
+    color: #486290;
+    font-family: Metropolis;
+    font-weight: bold;
+}

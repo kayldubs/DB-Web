@@ -20,6 +20,7 @@ import { HeroData } from './components/Carousel/HeroData';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import Expletus Sans Font
 import "@fontsource/expletus-sans"
+import { TextData } from './components/Carousel/TextData';
 
 
 //Set up Apollo and GraphQL
@@ -88,7 +89,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
             <main>
               <Home></Home>
               <ImageHero slides={HeroData}></ImageHero>
-              <ImageSlider slides={SliderData}></ImageSlider>
+              <ImageSlider slides={SliderData} menu={TextData}></ImageSlider>
               <Features currentCategory={currentCategory}></Features>
               <Form></Form>
             </main>

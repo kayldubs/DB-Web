@@ -82,6 +82,7 @@ body {
   width: 1000px;
   height: 600px;
   border-radius: 10px;
+  transition: all 0.5s ease;
 
 }
 
@@ -106,6 +107,20 @@ body {
   cursor: pointer;
   user-select: none;
 }
+
+.text-hero {
+  text-align: center;
+  font-family: Expletus Sans;
+  font-weight:bold;
+  font-size: 16;
+}
+
+.inside-text {
+  text-align: center;
+  padding: 30px;
+  color: #000
+}
+
 /*end second carousel*/
 
 /* start form styling*/
@@ -163,7 +178,7 @@ margin-bottom: 20px;
   position:relative;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 60px;
   text-align: center;
 }
 
