@@ -1,8 +1,11 @@
-import React from 'react'
-import useForm from './useForm'
+import React from 'react';
+import useForm from './useForm';
+// import validate from './validateInfo';
+import './contact.css';
 
-function SignUp() {
-    const {handleChange, values, handleSubmit} = useForm();
+const SignUp = ({submitForm}) => {
+
+    const {handleChange, values, handleSubmit, errors } = useForm(submitForm);
     return (
         <div className='form-contact-right'>
             <form className='form' onSubmit={handleSubmit}>
@@ -19,6 +22,7 @@ function SignUp() {
                         value={values.name}
                         onChange={handleChange}
                         />
+                    {errors.name && <p>{errors.name}</p>}
                 </div>
                 <div className='form-inputs'>
                     <label htmlFor='email' className='form-label'>Email</label>
@@ -30,6 +34,7 @@ function SignUp() {
                         value={values.email}
                         onChange={handleChange}
                         />
+                    {errors.email && <p>{errors.email}</p>}
                 </div>
                 <div className='form-inputs'>
                     <label htmlFor='job' className='form-label'>Job Title</label>
@@ -41,6 +46,7 @@ function SignUp() {
                         value={values.job}
                         onChange={handleChange}
                         />
+                    {errors.job && <p>{errors.job}</p>}
                 </div>
                 <div className='form-inputs'>
                     <label htmlFor='organization' className='form-label'>Organization</label>
@@ -52,6 +58,7 @@ function SignUp() {
                         value={values.organization}
                         onChange={handleChange}
                         />
+                    {errors.organization && <p>{errors.organization}</p>}
                 </div>
                 <button className='form-input-btn' type='submit'>
                     Submit
