@@ -20,66 +20,88 @@ import Demand from '../../assests/imgs/demandVector.svg';
 
 
 //custom classes for styling
-const useStyles = makeStyles((theme) => ({
-  rightGrid: {
-    fontFamily: 'Metropolis',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    margin: 'auto',
-    paddingRight: '20px'
-  },
+// const useStyles = makeStyles((theme) => ({
+//   rightGrid: {
+//     fontFamily: 'Metropolis',
+//     display: 'flex',
+//     flexDirection: 'row',
+//     justifyContent: 'space-evenly',
+//     margin: 'auto',
+//     paddingRight: '20px'
+//   },
 
-}));
+// }));
 
 function Features() {
-  const classes = useStyles();
+  // const classes = useStyles();
   return (
     <Paper>
       <Container className='feature-body' >
-        <Grid className={classes.rightGrid} fontSize='36px'>
-          <Card class="col-lg-6">
+        <Grid fontSize='36px'>
+          <br></br>
+          <Card className='cardPositions'>
             <h2>Telemedical Ready</h2>
+            <div className='media'>
             <CardMedia
               component="img"
               alt="heart with connections to DigiBeat Logo"
               image={Telemedical}
               height='430'
+              width='250'
             />
-            <br></br>
+            </div>
+            <div className='textBox'>
             <p>Optimize your remote patient care practices.
             </p>
-            <br></br>
+            </div>
+            </Card>
+            <Card className='cardPositions'>
             <h2 className='AI'>AI-Driven Analysis</h2>
+            <div className='media2'>
             <CardMedia
               component="img"
               alt="heart with connections to DigiBeat Logo"
               image={AI}
-              height='500'
+              height='430'
+              width='200'
             />
+            </div>
+            <div className='textBox'>
             <p>Realibly detect and analyze abnormalities before they become illness.</p>
+            </div>
           </Card>
 
-          <Card class="col-lg-6">
+          <Card className='cardPositions'>
             <h2>High Fidelity Audio</h2>
+            <div className='media'>
             <CardMedia
               component="img"
               alt="heart with connections to DigiBeat Logo"
               image={Record}
-              height='450'
+              height='430'
+              width='200'
             />
+            </div>
+            <div className='textBox'>
             <p className='record-text'>Hear each beat with crystal clear playback quality, adjustable volume control, and noise eliminating technology.</p>
-        
+            </div>
+            </Card>
+            <Card className='cardPositions'>
             <h2>On Demand Exams</h2>
+            <div className='media2'>
             <CardMedia
               component="img"
               alt="heart with connections to DigiBeat Logo"
               image={Demand}
-              height='450'
+              height='430'
+              width='200'
             />
-            <br></br>
+            </div>
+            <div className='textBox'>
             <p>Take patient exams with ease anytime, anywhere.</p>
+            </div>
           </Card>
+          <br></br>
         </Grid>
       </Container>
     </Paper>

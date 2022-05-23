@@ -54,7 +54,7 @@ body {
   top: 50%;
   right: 32px;
   font-size: 3rem;
-  color: #27AAE1;
+  color:#27AAE1;
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -174,27 +174,59 @@ margin-bottom: 20px;
 
 /*start features styling */
 
-.feature-body {
-  position:relative;
-  display: flex;
-  justify-content: center;
-  padding: 60px;
-  text-align: center;
-}
-
-.feature-body p{
-  padding: 20px;
-}
 
 .feature-body h2 {
   text-decoration:underline #486290;
   text-underline-position: from-font;
   font-weight: bold;
   font-family: Expletus Sans; 
+  text-align: center;
 }
 
-.AI {
-  padding-top: 18px;
+.cardPositions {
+  background: linear-gradient(
+      90deg,
+      rgb(39, 170, 225) 0%,
+      rgb(72, 98, 144) 100%
+    );
+    padding: 20px;
+    margin: 20px;
+    width:100%;
+    grid-template-columns: 1fr 1fr;
 }
 
+.media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  float: left;
+}
 
+.media2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  float: right;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: row;
+  position:relative;
+  flex-direction: column;
+  border-color: #486290;
+  border-radius: 5px;
+
+}
+
+.textBox2 {
+  display: flex;
+  flex-direction: row;
+  position:relative;
+  flex-direction: column;
+  border-color: #486290;
+  border-radius: 5px;
+
+}

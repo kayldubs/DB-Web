@@ -58,3 +58,17 @@ hr {
     animation: slide-top 1s ease-in 0.5s;
     animation-fill-mode: forwards;
 }
+
+.hero-icons {
+    /* background: linear-gradient(
+      90deg,
+      rgb(39, 170, 225) 0%,
+      rgb(72, 98, 144) 100%
+    ); */
+    /* background: rgba(39, 170, 225, 0.4); */
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: none;
+}

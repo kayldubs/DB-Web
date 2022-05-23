@@ -1,6 +1,6 @@
 .NavItems {
     background: white;
-    height: 200px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
-    height: 150px;
+    height: 100px;
 }
 
 .nav-menu {
