@@ -1,3 +1,8 @@
+
+ul { 
+    list-style: none;
+  }
+
 .NavItems {
     background: white;
     height: 150px;

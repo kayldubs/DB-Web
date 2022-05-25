@@ -7,6 +7,9 @@ import Card from '@mui/material/Card';
 import Paper from '@mui/material/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 
+//css import 
+import './slider.css'
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -14,12 +17,12 @@ const useStyles = makeStyles((theme) => ({
       fontSize:'40px', 
       fontFamily:'Expletus Sans',
       paddingTop: '50px',
-      margin: 'auto',
       display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         textDecoration: 'underline',
         textDecorationColor: '#27AAE1',
+        
     },
     featureSubtext: {
       paddingTop: "80px",
@@ -35,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight:'Bold',
         fontSize:'48px',
         padding: '70px',
-        margin: 'auto',
+        // margin: 'auto',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -65,7 +68,7 @@ if (!Array.isArray(slides) || slides.length <= 0) {
 }
 
     return (
-    <Paper className='row slider'>
+    <section className='row sliders'>
         <h1 className={classes.keyFeatures}>Key Features</h1>
       <Card varient="outlined" className='col-lg-6 info-plane'>
         <h1 className={classes.featureCard}>The future of medical examinations</h1>
@@ -92,7 +95,7 @@ if (!Array.isArray(slides) || slides.length <= 0) {
                 )
             })}
         </Card>
-        </Paper>
+        </section>
     )
 }
 

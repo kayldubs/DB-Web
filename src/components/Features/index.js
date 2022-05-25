@@ -1,4 +1,5 @@
 import React from 'react';
+import './feature.css';
 
 
 //Material UI Imports 
@@ -51,11 +52,15 @@ function Features() {
             />
             </div>
             <div className='textBox'>
-            <p>Optimize your remote patient care practices.
-            </p>
+            <ul>
+              <li>• Optimize your remote patient care practices.</li>
+              <li>• Use Our patented AI technology to self guide your exams with your Doctor from the comfort of your home.</li>
+              <li>• Increased quality of patient care through DigiBeat's assistive application.</li>
+              <li>• Review medical files and disagnosis with ease from anywhere.</li>
+            </ul>
             </div>
             </Card>
-            <Card className='cardPositions'>
+            <Card className='cardPositions2'>
             <h2 className='AI'>AI-Driven Analysis</h2>
             <div className='media2'>
             <CardMedia
@@ -67,11 +72,16 @@ function Features() {
             />
             </div>
             <div className='textBox'>
-            <p>Realibly detect and analyze abnormalities before they become illness.</p>
+              <ul>
+            <li>• Realibly detect and analyze abnormalities before they become illness.</li>
+            <li>• </li>
+            <li>• </li>
+            <li>• </li>
+            </ul>
             </div>
           </Card>
 
-          <Card className='cardPositions'>
+          <Card className='cardPositions3'>
             <h2>High Fidelity Audio</h2>
             <div className='media'>
             <CardMedia
@@ -82,11 +92,11 @@ function Features() {
               width='200'
             />
             </div>
-            <div className='textBox'>
+            <div className='textBox2'>
             <p className='record-text'>Hear each beat with crystal clear playback quality, adjustable volume control, and noise eliminating technology.</p>
             </div>
             </Card>
-            <Card className='cardPositions'>
+            <Card className='cardPositions4'>
             <h2>On Demand Exams</h2>
             <div className='media2'>
             <CardMedia
@@ -97,7 +107,7 @@ function Features() {
               width='200'
             />
             </div>
-            <div className='textBox'>
+            <div className='textBox2'>
             <p>Take patient exams with ease anytime, anywhere.</p>
             </div>
           </Card>

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import SignUp from './SignUp';
 import Success from './Success';
 import './contact.css';
-import formIMG from '../../assests/imgs/input.jpeg'
+import formIMG from '../../assests/imgs/device.svg'
+
 
 
 function Form() {
