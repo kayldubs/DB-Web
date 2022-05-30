@@ -37,8 +37,8 @@ function Features() {
   // const classes = useStyles();
   return (
     <Paper>
-      <Container className='feature-body' >
-        <Grid fontSize='36px'>
+      <Container class='col-lg-12' >
+        <Grid className='feature-body' fontSize='36px'>
           <br></br>
           <Card className='cardPositions'>
             <h2>Telemedical Ready</h2>
@@ -51,12 +51,12 @@ function Features() {
               width='250'
             />
             </div>
-            <div className='textBox'>
+            <div className='textBox2'>
             <ul>
               <li>• Optimize your remote patient care practices.</li>
-              <li>• Use Our patented AI technology to self guide your exams with your Doctor from the comfort of your home.</li>
+              {/* <li>• Use Our patented AI technology to self guide your exams with your Doctor from the comfort of your home.</li>
               <li>• Increased quality of patient care through DigiBeat's assistive application.</li>
-              <li>• Review medical files and disagnosis with ease from anywhere.</li>
+              <li>• Review medical files and disagnosis with ease from anywhere.</li> */}
             </ul>
             </div>
             </Card>
@@ -71,7 +71,7 @@ function Features() {
               width='200'
             />
             </div>
-            <div className='textBox'>
+            <div className='textBox2'>
               <ul>
             <li>• Realibly detect and analyze abnormalities before they become illness.</li>
             <li>• </li>
@@ -80,7 +80,8 @@ function Features() {
             </ul>
             </div>
           </Card>
-
+          </Grid>
+          <Grid className='feature-body' fontSize='36px'>
           <Card className='cardPositions3'>
             <h2>High Fidelity Audio</h2>
             <div className='media'>
@@ -98,7 +99,7 @@ function Features() {
             </Card>
             <Card className='cardPositions4'>
             <h2>On Demand Exams</h2>
-            <div className='media2'>
+            <div className='media'>
             <CardMedia
               component="img"
               alt="heart with connections to DigiBeat Logo"

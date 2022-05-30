@@ -7,8 +7,8 @@
     justify-content: center;
     width: 30%;
     margin-left: 20px;
-    padding: 3rem;
-    background: rgba(39, 170, 225, 0.4);
+    padding: 1rem;
+    background: rgba(238, 229, 233, 0.7);
     border-radius: 5px;
     border-style: solid;
     border-color: #C1C1C1;
@@ -51,7 +51,7 @@ hr {
 /** top text edit**/
 
 .top-content {
-    font-weight: bold;
+    font-weight: bolder;
     color: #27AAE1;
     font-size: 16;
     margin: 5px;
@@ -72,3 +72,10 @@ hr {
     margin-right: 100px;
     padding: none;
 }
+
+.text-hero {
+    text-align: center;
+    font-family: Expletus Sans;
+    font-weight:bold;
+    font-size: 16;
+  }
