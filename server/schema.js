@@ -3,6 +3,6 @@
 
 // //user's name type
 // cosnt NameType = new GraphQLObjectType({
-//     name: 'Name'
+// //     name: 'Name'
 
-// })
+// // })
