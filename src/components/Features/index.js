@@ -16,6 +16,7 @@ import AI from '../../assests/imgs/aiVactor.svg';
 import Telemedical from '../../assests/imgs/teleVector.svg';
 import Record from '../../assests/imgs/recordVector.svg';
 import Demand from '../../assests/imgs/demandVector.svg';
+import IMG from '../../assests/imgs/infoCard-03.svg';
 
 //import { borderRadius, fontWeight } from '@material-ui/system';
 
@@ -36,10 +37,10 @@ import Demand from '../../assests/imgs/demandVector.svg';
 function Features() {
   // const classes = useStyles();
   return (
-    <Paper>
-      <Container class='col-lg-12' >
-        <Grid className='feature-body' fontSize='36px'>
-          <br></br>
+    // <Paper>
+      // <Container >
+      //   <Grid className='feature-body' fontSize='36px'>
+          {/* <br></br>
           <Card className='cardPositions'>
             <h2>Telemedical Ready</h2>
             <div className='media'>
@@ -57,7 +58,7 @@ function Features() {
               {/* <li>• Use Our patented AI technology to self guide your exams with your Doctor from the comfort of your home.</li>
               <li>• Increased quality of patient care through DigiBeat's assistive application.</li>
               <li>• Review medical files and disagnosis with ease from anywhere.</li> */}
-            </ul>
+            /* </ul>
             </div>
             </Card>
             <Card className='cardPositions2'>
@@ -112,10 +113,26 @@ function Features() {
             <p>Take patient exams with ease anytime, anywhere.</p>
             </div>
           </Card>
-          <br></br>
+          <br></br> */
+          <Paper>
+          <Container>
+          <Grid>
+          <Card className='cardPositions4'>
+            
+            <div className='media'>
+            <CardMedia
+              component="img"
+              alt="heart with connections to DigiBeat Logo"
+              image={IMG}
+              height='430'
+              width='200'
+            />
+            </div>
+        </Card>
         </Grid>
       </Container>
-    </Paper>
+     
+    
   );
 }
 export default Features;

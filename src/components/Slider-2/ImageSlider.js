@@ -37,13 +37,12 @@ const useStyles = makeStyles((theme) => ({
         fontFamily:'Expletus Sans',
         fontWeight:'Bold',
         fontSize:'48px',
-        padding: '40px',
-        marginTop: 'none',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         textDecoration: 'underline',
-        textDecorationColor: '#486290'
+        textDecorationColor: '#486290',
+        marginBottom: '30px'
     
       }
 }))
@@ -68,17 +67,17 @@ if (!Array.isArray(slides) || slides.length <= 0) {
 }
 
     return (
-    <section className='row sliders'>
+    <section className='row'>
         <h1 className={classes.keyFeatures}>Key Features</h1>
       <Card varient="outlined" className='col-lg-6 info-plane'>
         <h1 className={classes.featureCard}>The future of medical examinations</h1>
         <div className={classes.featureSubtext}>
         <h2>Goodbye Analog, Hello Digital</h2>
-        <p>Digibeat offers an innovative improvement to the traditional stethoscope exam.</p>
+        <p>Digibeat offers an innovative improvements to the traditional stethoscope exam.</p>
         <h2>Timeless Pratice, Fresh Approach</h2>
         <p>Eliminate inaccuracies in exams while simultaneously streamlining the process</p>
         <h2>Doctor Designed, Patient Approved</h2>
-        <p>Made with a physician's workflow in mind, reliability and ease of use are heavily emphasized in it's construction.</p>
+        <p>Created with a physician’s workflow in mind, reliability and ease of use are at the forefront of this system.</p>
         </div>
       </Card>
       <br></br>
