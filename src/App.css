@@ -35,28 +35,6 @@ body {
   
 }
 
-.left-arrow {
-  position: absolute;
-  top: 50%;
-  left: 32px;
-  font-size: 3rem;
-  color: #27AAE1;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-}
-
-.right-arrow {
-  position: absolute;
-  top: 50%;
-  right: 32px;
-  font-size: 3rem;
-  color:#27AAE1;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-}
-
 /* .info-plane {
   margin-right: 5px;
 } */
@@ -72,14 +50,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-}
-
-.hero-image {
-  width: 1200px;
-  height: 600px;
-  border-radius: 10px;
-  transition: all 0.5s ease;
 
 }
 

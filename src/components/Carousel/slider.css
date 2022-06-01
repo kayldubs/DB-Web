@@ -6,8 +6,8 @@
     flex-direction: column;
     justify-content: center;
     width: 30%;
-    margin-left: 20px;
-    padding: 1rem;
+    margin-left: 25px;
+    padding: 2rem;
     background: rgba(238, 229, 233, 0.7);
     border-radius: 5px;
     border-style: solid;
@@ -67,9 +67,11 @@ hr {
     ); */
     /* background: rgba(39, 170, 225, 0.4); */
     border-radius: 5px;
-    top: -100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    top: -150px;
+    margin-left: 80px;
+    margin-right: 145px;
+    color: #dbf1fa;
+    
 }
 
 .text-hero {
@@ -78,4 +80,43 @@ hr {
     font-weight:bolder;
     font-size: 16;
     padding-top: 3rem;
+  }
+
+  .hero-image {
+    width: 1400px;
+    height: 650px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+   justify-content: center;
+  
+  }
+
+  .left-button {
+    position: relative;
+    top: 35%;
+    left: 700px;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    width: 60px;
+  }
+  
+  .right-button {
+    position: relative;
+    top: 35%;
+    left: 720px;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    width: 60px; 
+  }
+
+  .center-arrow {
+    position: relative;
+    top: 35%;
+    left: 740px;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    width: 60px; 
   }

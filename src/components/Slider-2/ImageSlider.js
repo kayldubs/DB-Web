@@ -8,7 +8,7 @@ import Paper from '@mui/material/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 
 //css import 
-import './slider.css'
+import './slider2.css'
 
 
 

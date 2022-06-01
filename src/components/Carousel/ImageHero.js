@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { HeroData } from './HeroData';
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import { FaMinus } from 'react-icons/fa';
 import './slider.css';
 
 
@@ -55,8 +55,9 @@ const ImageHero = ({ slides }) => {
 
             </div>
             <div className='hero-icons'>
-                <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
-                <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
+                <FaMinus className='left-button' onClick={prevSlide} />
+                <FaMinus className='right-button' onClick={nextSlide} />
+                <FaMinus className='center-arrow' onClick={nextSlide} />
                 {HeroData.map((pictures, index) => {
                     return (
                         <div className={index === current ? 'slide active' : 'slide'} key={index}>

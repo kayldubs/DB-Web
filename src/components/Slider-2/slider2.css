@@ -1,0 +1,25 @@
+.sliders {
+    top: -600px;
+}
+
+.left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: #27AAE1;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color:#27AAE1;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
