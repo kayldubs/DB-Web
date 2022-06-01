@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
 import  '../Nav/Nav.css'
 import { Button } from '../Nav/Button'
+ 
 
 
 class Nav extends Component {
@@ -15,7 +16,7 @@ class Nav extends Component {
 
     render() {
         return(
-            <nav className='NavItems'>
+            <nav position="sticky" className='NavItems'>
                 <a href="/" >
                 <CardMedia className='navbar-logo'
                          component="img"

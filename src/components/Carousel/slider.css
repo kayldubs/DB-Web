@@ -54,7 +54,7 @@ hr {
     font-weight: bolder;
     color: #27AAE1;
     font-size: 16;
-    margin: 5px;
+    margin: 1rem;
     animation: slide-top 1s ease-in 0.5s;
     animation-fill-mode: forwards;
 }
@@ -67,15 +67,15 @@ hr {
     ); */
     /* background: rgba(39, 170, 225, 0.4); */
     border-radius: 5px;
-    top: -150px;
+    top: -100px;
     margin-left: 100px;
     margin-right: 100px;
-    padding: none;
 }
 
 .text-hero {
     text-align: center;
     font-family: Expletus Sans;
-    font-weight:bold;
+    font-weight:bolder;
     font-size: 16;
+    padding-top: 3rem;
   }

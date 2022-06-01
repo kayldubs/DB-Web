@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 //import components(pages to then insert into the return JXS function)
-import Home from './components/Home';
+//import Home from './components/Home';
 import Nav from './components/Nav';
 import Features from './components/Features';
 // import ContactForm from './components/Contact';
@@ -12,6 +12,7 @@ import ImageSlider from './components/Slider-2/ImageSlider';
 import { SliderData } from './components/Slider-2/SliderData';
 import ImageHero from './components/Carousel/ImageHero';
 import { HeroData } from './components/Carousel/HeroData';
+import Faq from './components/FAQ/Faq.js';
 // import Payer from './components/Payer';
 // import Physician from './components/Physician';
 // import Footer from './components/Footer';
@@ -87,13 +88,14 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
           <Switch>
               <Route exact path="/"> 
                 <ImageHero slides={HeroData} /> 
-                <ImageSlider slides={SliderData} menu={TextData} />
+                <ImageSlider slides={SliderData} menu={TextData}/>
                 <Features currentCategory={currentCategory} /> 
                 <Form />
               </Route> 
             {/* <Route exact path="/Payer" component={Payer} /> */}
             {/* <Route exact path="/Physician" component={Physician} /> */}
-          </Switch>
+            <Route exact path="/faq"> <Faq/> </Route>
+            </Switch>
           {/* <Footer /> */}
         {/* </Provider> */}
     </div>

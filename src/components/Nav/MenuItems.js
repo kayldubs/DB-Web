@@ -5,17 +5,17 @@
 export const MenuItems = [
     {
         title: 'Home',
-        url: '#',
+        url: '/',
         Cname:'nav-links'
     },
     {
         title: 'About',
-        url: '#',
+        url: '/signup',
         Cname:'nav-links'
     },
     {
         title: 'FAQ',
-        url: '#',
+        url: '/faq',
         Cname:'nav-links'
     },
     //Mobile pop out
