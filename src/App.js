@@ -1,6 +1,6 @@
 //import Logo from './assests/imgs/DB_Logo.pdf';
 import React, { useState } from 'react';
-//import { BrowserRouter as Switch, Route, Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 //import components(pages to then insert into the return JXS function)
 import Home from './components/Home';
@@ -80,25 +80,24 @@ function App() {
 const [currentCategory, setCurrentCategory] = useState(categories[0]);
   return(
   // <ApolloProvider client={client}>
-    // <Router>
+  <Router>
     <div className='App'> 
         {/* <Provider> */}
-          <Nav></Nav>
-          {/* <Switch> */}
-            <main>
-              <Home></Home>
-              <ImageHero slides={HeroData}></ImageHero>
-              <ImageSlider slides={SliderData} menu={TextData}></ImageSlider>
-              <Features currentCategory={currentCategory}></Features>
-              <Form></Form>
-            </main>
+          <Nav />
+          <Switch>
+              <Route exact path="/"> 
+                <ImageHero slides={HeroData} /> 
+                <ImageSlider slides={SliderData} menu={TextData} />
+                <Features currentCategory={currentCategory} /> 
+                <Form />
+              </Route> 
             {/* <Route exact path="/Payer" component={Payer} /> */}
             {/* <Route exact path="/Physician" component={Physician} /> */}
-          {/* </Switch> */}
+          </Switch>
           {/* <Footer /> */}
         {/* </Provider> */}
     </div>
-//    </Router>
+   </Router>
 // </ApolloProvider>
 );
 }
