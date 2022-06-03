@@ -14,62 +14,19 @@
     font-family: Expletus Sans; 
     text-align: center;
   }
-  
-  .cardPositions {
-    background: linear-gradient(
-        90deg,
-        rgb(72, 98, 144) 0%,
-        rgb(106,138,175) 100%
-      );
-      padding: 20px;
-      margin: 20px;
-      width:100%;
-      grid-template-columns: 1fr 1fr;
-  }
 
-  .cardPositions2 {
-    background: linear-gradient(
-        90deg,
-        rgb(106,138,175) 0%,
-        rgb(39, 170, 225) 100%
-      );
-      padding: 20px;
-      margin: 20px;
-      width:100%;
-      grid-template-columns: 1fr 1fr;
-  }
-
-  .cardPositions3 {
-    background: linear-gradient(
-        90deg,
-        rgb(39, 170, 225) 0%,
-        rgb(204,204,204) 100%
-      );
-      padding: 20px;
-      margin: 20px;
-      width:100%;
-      grid-template-columns: 1fr 1fr;
-  }
-
-  .cardPositions4 {
-    background: linear-gradient(
-        90deg,
-        rgb(204,204,204) 0%,
-        rgb(238,229,233) 100%
-      );
-      padding: 20px;
-      margin: 20px;
-      width:100%;
-      grid-template-columns: 1fr 1fr;
-  }
   
   .media {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     position: relative;
     float: left;
-    padding-left: 25px;
+    object-fit:contain;
+    height: 100%;
+    width: 100%;
+    padding:7rem;
+    margin: 4rem;
+    
   }
   
   .media2 {

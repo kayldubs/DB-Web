@@ -37,102 +37,28 @@ import IMG from '../../assests/imgs/infoCard-03.svg';
 function Features() {
   // const classes = useStyles();
   return (
-    // <Paper>
-      // <Container >
-      //   <Grid className='feature-body' fontSize='36px'>
-          {/* <br></br>
-          <Card className='cardPositions'>
-            <h2>Telemedical Ready</h2>
-            <div className='media'>
-            <CardMedia
-              component="img"
-              alt="heart with connections to DigiBeat Logo"
-              image={Telemedical}
-              height='430'
-              width='250'
-            />
-            </div>
-            <div className='textBox2'>
-            <ul>
-              <li>• Optimize your remote patient care practices.</li>
-              {/* <li>• Use Our patented AI technology to self guide your exams with your Doctor from the comfort of your home.</li>
-              <li>• Increased quality of patient care through DigiBeat's assistive application.</li>
-              <li>• Review medical files and disagnosis with ease from anywhere.</li> */}
-            /* </ul>
-            </div>
-            </Card>
-            <Card className='cardPositions2'>
-            <h2 className='AI'>AI-Driven Analysis</h2>
-            <div className='media2'>
-            <CardMedia
-              component="img"
-              alt="heart with connections to DigiBeat Logo"
-              image={AI}
-              height='430'
-              width='200'
-            />
-            </div>
-            <div className='textBox2'>
-              <ul>
-            <li>• Realibly detect and analyze abnormalities before they become illness.</li>
-            <li>• </li>
-            <li>• </li>
-            <li>• </li>
-            </ul>
-            </div>
-          </Card>
-          </Grid>
-          <Grid className='feature-body' fontSize='36px'>
-          <Card className='cardPositions3'>
-            <h2>High Fidelity Audio</h2>
-            <div className='media'>
-            <CardMedia
-              component="img"
-              alt="heart with connections to DigiBeat Logo"
-              image={Record}
-              height='430'
-              width='200'
-            />
-            </div>
-            <div className='textBox2'>
-            <p className='record-text'>Hear each beat with crystal clear playback quality, adjustable volume control, and noise eliminating technology.</p>
-            </div>
-            </Card>
-            <Card className='cardPositions4'>
-            <h2>On Demand Exams</h2>
-            <div className='media'>
-            <CardMedia
-              component="img"
-              alt="heart with connections to DigiBeat Logo"
-              image={Demand}
-              height='430'
-              width='200'
-            />
-            </div>
-            <div className='textBox2'>
-            <p>Take patient exams with ease anytime, anywhere.</p>
-            </div>
-          </Card>
-          <br></br> */
+     
           <Paper>
-          <Container>
-          <Grid>
-          <Card className='cardPositions4'>
-            
-            <div className='media'>
+            <Container>
+              <br></br>
+          <Card className='cardPositions4' class='row'>
+            <div className='media' class='col-lg-6'>
             <CardMedia
               component="img"
               alt="heart with connections to DigiBeat Logo"
               image={IMG}
-              height='430'
-              width='200'
             />
             </div>
+            <div className='media2' class='col-lg-6'>
+              <h1>Test Header</h1>
+              <p>text content</p>
+            </div>
         </Card>
-        </Grid>
-      </Container>
-     
+        <br></br>
+        </Container>
+    </Paper> 
     
-  );
+  )
 }
+
 export default Features;
