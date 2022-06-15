@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { HeroData } from './HeroData';
-import { FaMinus } from 'react-icons/fa';
+import { BsDashLg } from 'react-icons/bs';
 import './slider.css';
 
 
@@ -11,7 +11,7 @@ const ImageHero = ({ slides }) => {
 
     const autoScroll = true;
     let slideInterval;
-    let intervalTime = 5000;
+    let intervalTime = 15000;
 
     function auto() {
         slideInterval = setInterval(nextSlide, intervalTime)
@@ -36,7 +36,7 @@ const ImageHero = ({ slides }) => {
     }
 
     return (
-        <section>
+        <div>
             <div className='text-hero'>
                 <h1>The World's Most</h1>
                 {HeroData.map((header, index) => {
@@ -55,9 +55,6 @@ const ImageHero = ({ slides }) => {
 
             </div>
             <div className='hero-icons'>
-                <FaMinus className='left-button' onClick={prevSlide} />
-                <FaMinus className='right-button' onClick={nextSlide} />
-                <FaMinus className='center-arrow' onClick={nextSlide} />
                 {HeroData.map((pictures, index) => {
                     return (
                         <div className={index === current ? 'slide active' : 'slide'} key={index}>
@@ -75,7 +72,12 @@ const ImageHero = ({ slides }) => {
                     )
                 })}
             </div>
-        </section>
+            <div className='buttons'>
+                <BsDashLg className='left-button' onClick={prevSlide} size={70} />
+                <BsDashLg className='right-button' onClick={nextSlide} size={70}/>
+                {/* <BsDashLg className='center-arrow' onClick={nextSlide} size={70} /> */}
+                </div>
+        </div>
     )
 };
 

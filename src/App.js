@@ -90,7 +90,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
                 <ImageHero slides={HeroData} /> 
                 <ImageSlider slides={SliderData} menu={TextData}/>
                 <Features currentCategory={currentCategory} /> 
-                <Form />
+                <Form path="contactForm" />
               </Route> 
             {/* <Route exact path="/Payer" component={Payer} /> */}
             {/* <Route exact path="/Physician" component={Physician} /> */}
