@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  font-family:"Metropolis";
+  font-family:"Source San Pro";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -21,7 +21,7 @@ body {
 /* start form styling*/
 
 .contact-form {
-  font-family: Metropolis;
+  font-family: Source San Pro;
   font-weight: bold;
   width: 30%;
   display: flex;
