@@ -15,13 +15,13 @@ import './slider2.css'
 const useStyles = makeStyles((theme) => ({
     featureCard: {
       fontSize:'40px', 
-      fontFamily:'Expletus Sans',
+      fontFamily:'Source San Pro, sans-serif',
       paddingTop: '50px',
       display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         textDecoration: 'underline',
-        textDecorationColor: '#27AAE1',
+        textDecorationColor: '#6a8aaf',
         
     },
     featureSubtext: {
@@ -31,17 +31,17 @@ const useStyles = makeStyles((theme) => ({
       height: "100%",
       textAlign: 'center',
       fontSize:'18px',
-      fontFamily:'Metropolis',
+      fontFamily:'Source San Pro, sans-serif',
     },
     keyFeatures: {
-        fontFamily:'Expletus Sans',
+        fontFamily:'Source San Pro, sans-serif',
         fontWeight:'Bold',
         fontSize:'48px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         textDecoration: 'underline',
-        textDecorationColor: '#486290',
+        textDecorationColor: '#6a8aaf',
         marginBottom: '30px'
     
       }

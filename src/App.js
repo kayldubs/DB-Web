@@ -15,7 +15,7 @@ import { HeroData } from './components/Carousel/HeroData';
 import Faq from './components/FAQ/Faq.js';
 // import Payer from './components/Payer';
 // import Physician from './components/Physician';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 //import CSS Boostrap 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -90,13 +90,13 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
                 <ImageHero slides={HeroData} /> 
                 <ImageSlider slides={SliderData} menu={TextData}/>
                 <Features currentCategory={currentCategory} /> 
-                <Form />
+                <Form path="contactForm" />
               </Route> 
             {/* <Route exact path="/Payer" component={Payer} /> */}
             {/* <Route exact path="/Physician" component={Physician} /> */}
             <Route exact path="/faq"> <Faq/> </Route>
             </Switch>
-          {/* <Footer /> */}
+          <Footer />
         {/* </Provider> */}
     </div>
    </Router>

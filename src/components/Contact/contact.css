@@ -7,7 +7,7 @@
     height: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-family: Metropolis;
+    font-family: 'Source Sans Pro', sans-serif;
   }
   
   .close-btn {

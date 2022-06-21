@@ -1,14 +1,13 @@
 .content {
     position: absolute;
     top: 23rem;
-    /* left: 5rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 30%;
-    margin-left: 25px;
+    margin-left: 55px;
     padding: 2rem;
-    background: rgba(238, 229, 233, 0.7);
+    background: rgba(238, 229, 233, 0.9);
     border-radius: 5px;
     border-style: solid;
     border-color: #C1C1C1;
@@ -18,7 +17,7 @@
 
 @keyframes slide-up {
     0% {
-        visibility: visible;
+        visibility:visible;
         top: 23rem;
     }
     100% {
@@ -30,7 +29,7 @@
 
 .content > * {
     color: #486290;
-    font-family: Metropolis;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
 }
 
@@ -52,72 +51,68 @@ hr {
 
 .top-content {
     font-weight: bolder;
+    font-size: 48px;
     color: #27AAE1;
-    font-size: 16;
     margin: 1rem;
-    animation: slide-top 1s ease-in 0.5s;
-    animation-fill-mode: forwards;
+    animation: fadeIn 2s; 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .hero-icons {
-    /* background: linear-gradient(
-      90deg,
-      rgb(39, 170, 225) 0%,
-      rgb(72, 98, 144) 100%
-    ); */
-    /* background: rgba(39, 170, 225, 0.4); */
-    border-radius: 5px;
-    top: -150px;
-    margin-left: 80px;
-    margin-right: 145px;
-    color: #81cfee;
+    position: relative;
     padding-top: 50px;
-    
-}
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -150px;
+    margin:auto;
+    border-radius: 5px;
+  
+  }
 
 .text-hero {
     text-align: center;
-    font-family: Expletus Sans;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight:bolder;
-    font-size: 16;
-    padding-top: 3rem;
+    font-size: 16px;
+    padding: 3rem;
+    margin-bottom: 0px;
   }
 
   .hero-image {
     width: 1400px;
-    height: 650px;
+    height: 700px;
     border-radius: 10px;
     transition: all 0.5s ease;
+    display: flex;
    justify-content: center;
+   animation: fadeIn 2s; 
   
   }
 
-  .left-button {
-    position: relative;
-    top: 40%;
-    left: 700px;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-    width: 60px;
+  .buttons {
+      position: relative;
+      flex:auto;
+      flex-direction:row;
+      color: #d6d6d6;
+      top: -250px;
+      right: -745px;
+      
   }
-  
+
   .right-button {
-    position: relative;
-    top: 40%;
-    left: 720px;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-    width: 60px; 
+      margin-left: 50px;
   }
 
-  .center-arrow {
-    position: relative;
-    top: 40%;
-    left: 740px;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-    width: 60px; 
+  .pTag {
+      font-size: 16px;
   }

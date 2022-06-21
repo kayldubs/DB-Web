@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  font-family:"Metropolis";
+  font-family:"Source San Pro";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -16,79 +16,12 @@ body {
   --offWhite: rgb(226;232;221);
   --warmTaupe: rgb(205;198;174);
 }
-/* start device carousel styling*/
 
-.slider {
-  position:relative;
-  display: flex;
-  flex-direction: row;
-  
-}
-
-.image {
-  width: 800px;
-  height: 800px;
-  border-radius: 10px;
-  display: inline-flex;
-  align-items: center;
-  
-  
-}
-
-/* .info-plane {
-  margin-right: 5px;
-} */
-
-/* end syling */
-
-
-/* start hero carousel styling */
-
-.hero-icons {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.hero-icon {
-  position: absolute;
-  top: 50%;
-  left: 32px;
-  font-size: 3rem;
-  color: #27AAE1;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-}
-
-.hero-icon2 {
-  position: absolute;
-  top: 50%;
-  right: 32px;
-  font-size: 3rem;
-  color: #27AAE1;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-}
-
-
-
-.inside-text {
-  text-align: center;
-  padding: 30px;
-  color: #000
-}
-
-/*end second carousel*/
 
 /* start form styling*/
 
 .contact-form {
-  font-family: Metropolis;
+  font-family: Source San Pro;
   font-weight: bold;
   width: 30%;
   display: flex;
