@@ -30,10 +30,23 @@
   .media2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     position: relative;
-    float: right;
   }
+
+  .media3 {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    position: relative;
+    height: 1000px;
+    padding:7rem;
+    margin-left: 50%;
+    
+
+  }
+
+
 
   .mainContainer {
     margin: 50px;

@@ -21,7 +21,7 @@ export const MenuItems = [
     //Mobile pop out
     {
         title: 'Sign Up',
-        url: 'contactForm',
+        url: '/contactForm',
         Cname:'nav-links'
     },
 ]
