@@ -13,6 +13,7 @@ import { SliderData } from './components/Slider-2/SliderData';
 import ImageHero from './components/Carousel/ImageHero';
 import { HeroData } from './components/Carousel/HeroData';
 import Faq from './components/FAQ/Faq.js';
+import About from './components/About/about';
 // import Payer from './components/Payer';
 // import Physician from './components/Physician';
 import Footer from './components/Footer';
@@ -96,6 +97,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
             {/* <Route exact path="/Payer" component={Payer} /> */}
             {/* <Route exact path="/Physician" component={Physician} /> */}
             <Route exact path="/faq"> <Faq/> </Route>
+            <Route exact path="/about"> <About/> </Route>
             </Switch>
           <Footer />
         {/* </Provider> */}

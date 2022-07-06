@@ -10,7 +10,7 @@ export const MenuItems = [
     },
     {
         title: 'About',
-        url: '/signup',
+        url: '/about',
         Cname:'nav-links'
     },
     {

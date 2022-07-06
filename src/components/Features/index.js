@@ -7,15 +7,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Card from '@mui/material/Card';
 import Paper from '@mui/material/Paper';
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Grid } from '@mui/material';
+import { Container } from '@mui/material';
 //import { borders } from '@mui/system';
 
 
 //import images
-import AI from '../../assests/imgs/aiVactor.svg';
-import Telemedical from '../../assests/imgs/teleVector.svg';
-import Record from '../../assests/imgs/recordVector.svg';
-import Demand from '../../assests/imgs/demandVector.svg';
 import IMG from '../../assests/imgs/infoCard-04.svg';
 import IMG2 from '../../assests/imgs/deviceInfo.svg';
 
@@ -56,17 +52,19 @@ function Features() {
             <h1> Copy section</h1>
           </div>
           </Card>
-          <div className='media2' class='col-lg-6'>
+          <br></br>
+          <Card className='cardPositions4' class='row'>
+          <div className='media2' class='col-lg-6 flex-row'>
             <h1> Copy section</h1>
           </div>
-          <div className='media3' class='col-lg-6'>
+          <div className='media3' class='col-lg-6 flew-row'>
           <CardMedia
               component="img"
               alt="heart with connections to DigiBeat Logo"
               image={IMG2}
-              
             />
           </div>
+          </Card>
         <br></br>
         <br></br>
       </Container>
