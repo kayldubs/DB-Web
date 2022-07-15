@@ -84,7 +84,7 @@ export default function About() {
                             justifyContent="center"
                         >
                             <Button variant="contained">Main call to action</Button>
-                            <Button variant="outlined">Secondary action</Button>
+                            <Button variant="outlined">Our Blog</Button>
                         </Stack>
                     </Container>
 
@@ -100,7 +100,7 @@ export default function About() {
                                 color="text.primary"
                                 gutterBottom
                             >
-                                Who Do We Help?
+                                Who We Help
                             </Typography>
                             <Typography variant="h5" align="center" color="text.secondary" component="p">
                                 Value statement
