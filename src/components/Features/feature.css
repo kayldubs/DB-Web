@@ -49,6 +49,13 @@
 .copy {
   padding-bottom: 2rem;
 }
+
+.aboutEm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
   
 
 

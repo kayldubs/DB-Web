@@ -232,6 +232,14 @@ export default function About() {
                                         </Typography>
                                     </CardContent>
                                 </Card>
+                                <Card>
+                                    <CardContent  className='aboutEm'>
+                                        <Typography>Arash Samimi - Regulatory/Quality Engineer</Typography>
+                                        <Typography>Calvin Bond - Electrical/Mechanical Engineer</Typography>
+                                        <Typography>Brandon Popp - Systems Analyst/IT</Typography>
+                                        <Typography>Kaylee Stevens - Graphic Designer/Developer</Typography>
+                                    </CardContent>
+                                </Card>
                             </Grid>
                     </Grid>
                 </Container>
