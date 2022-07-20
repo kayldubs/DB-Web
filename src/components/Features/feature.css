@@ -39,7 +39,10 @@
 .title {
   /* text-align: center; */
   color: #81cdee;
-  
+}
+
+.title2 {
+  color:#f0dbff;
 }
 
 .subTitle {

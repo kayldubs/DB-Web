@@ -15,11 +15,23 @@ import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CardHeader from '@mui/material/CardHeader';
+import { useState } from 'react';
+
+//MUI Icons
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import PaidIcon from '@mui/icons-material/Paid';
+import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 
 import './about.css';
 
+// import images
+import cliff from '../../assests/imgs/cliff.svg';
+import winston from '../../assests/imgs/winston.svg';
+import karl from '../../assests/imgs/karl.svg';
+
 const tiers = [
     {
+        icon: <AccountCircleIcon fontSize='large'/>,
         title: 'Patient',
         subheader: 'Value Statement',
         description: [
@@ -29,6 +41,7 @@ const tiers = [
         buttonVariant: 'outlined',
     },
     {
+        icon: <LocalHospitalIcon  fontSize='large'/>,
         title: 'Physician',
         subheader: 'Value Statement',
         description: [
@@ -37,7 +50,8 @@ const tiers = [
         buttonText: 'Get started',
         buttonVariant: 'contained',
     },
-    {
+    {   
+        icon: <PaidIcon  fontSize='large'/>,
         title: 'Payer',
         subheader: 'Value Statement',
         description: [
@@ -53,6 +67,7 @@ const tiers = [
 const theme = createTheme();
 
 export default function About() {
+    const [isHovering, setIsHovering] = useState(false);
     return (
         <ThemeProvider theme={theme}>
             <main>
@@ -119,7 +134,11 @@ export default function About() {
                                         md={4}
                                     >
                                         <Card>
+                                        <CardMedia component="h2" variant="h3" color="text.primary" align='center'>
+                                                        {tier.icon}
+                                                    </CardMedia>
                                             <CardHeader
+                                                icon={tier.icon}
                                                 title={tier.title}
                                                 subheader={tier.subheader}
                                                 titleTypographyProps={{ align: 'center' }}
@@ -131,6 +150,7 @@ export default function About() {
                                                         theme.palette.mode === 'light'
                                                             ? theme.palette.grey[200]
                                                             : theme.palette.grey[700],
+                                                            
                                                 }}
                                             />
                                             <CardContent>
@@ -142,9 +162,7 @@ export default function About() {
                                                         mb: 2,
                                                     }}
                                                 >
-                                                    <CardMedia component="h2" variant="h3" color="text.primary">
-                                                        {tier.image}
-                                                    </CardMedia>
+                                                    
                                                 </Box>
                                                 <ul>
                                                     {tier.description.map((line) => (
@@ -179,17 +197,19 @@ export default function About() {
                                             // 16:9
                                             pt: '56.25%',
                                         }}
-                                        image="https://source.unsplash.com/random"
+                                        image={winston}
                                         alt="random"
+                                        onMouseEnter={() => setIsHovering(true)}
+                                        onMouseLeave={() => setIsHovering(false)}
                                     />
                                     <CardContent sx={{ flexGrow: 1 }}>
                                         <Typography gutterBottom variant="h5" component="h2">
                                            Winston T. Richards, MD
                                         </Typography>
                                         <Typography>CMO</Typography>
-                                        <Typography>
+                                        {isHovering && (<Typography>
                                         Trauma Surgeon located in the North Central Florida area with a background in medicine and applied mathematics. As the founder and CEO, Winston has seen through the development of the Digibeat Electronic Stethoscope from its original prototype developed in Winston’s garage.
-                                        </Typography>
+                                        </Typography>)}
                                     </CardContent>
                                 </Card>
                                 <Card class='col-lg-4'>
@@ -199,17 +219,19 @@ export default function About() {
                                             // 16:9
                                             pt: '56.25%',
                                         }}
-                                        image="https://source.unsplash.com/random"
+                                        image={cliff}
                                         alt="random"
+                                        onMouseEnter={() => setIsHovering(true)}
+                                        onMouseLeave={() => setIsHovering(false)}
                                     />
                                     <CardContent sx={{ flexGrow: 1 }}>
                                         <Typography gutterBottom variant="h5" component="h2">
                                           Clifford Steele
                                         </Typography>
                                         <Typography>CEO</Typography>
-                                        <Typography>
+                                        {isHovering && (<Typography>
                                         Cliff has a background in Aeronautical, Aerospace and Astronautical Engineering from Embry-Riddle Aeronautical University. He focuses on project organization while being the brains behind the engineering that goes into developing the Digibeat Electronic Stethoscope.
-                                        </Typography>
+                                        </Typography>)}
                                     </CardContent>
                                 </Card>
                                 <Card class='col-lg-4'>
@@ -219,17 +241,19 @@ export default function About() {
                                             // 16:9
                                             pt: '56.25%',
                                         }}
-                                        image="https://source.unsplash.com/random"
+                                        image={karl}
                                         alt="random"
+                                        onMouseEnter={() => setIsHovering(true)}
+                                        onMouseLeave={() => setIsHovering(false)}
                                     />
                                     <CardContent sx={{ flexGrow: 1 }}>
                                         <Typography gutterBottom variant="h5" component="h2">
                                           Karl Dockendorf
                                         </Typography>
                                         <Typography>CTO</Typography>
-                                        <Typography>
+                                        {isHovering && (<Typography>
                                         Karl earned his BS and ME in electrical and computer engineering followed by a Ph.D. in biomedical engineering (neural engineering focus) from the University of Florida.  Karl is well versed in the design of computer hardware, intelligent information processing, machine learning, and adaptation of neuronal networks.  
-                                        </Typography>
+                                        </Typography>)}
                                     </CardContent>
                                 </Card>
                                 <Card>
