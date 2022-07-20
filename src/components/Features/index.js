@@ -15,6 +15,7 @@ import { Container } from '@mui/material';
 
 import IMG from '../../assests/imgs/infoCard-04.svg';
 import IMG2 from '../../assests/imgs/deviceInfo2.svg';
+import IMG3 from '../../assests/imgs/infoAI.svg';
 
 //import { borderRadius, fontWeight } from '@material-ui/system';
 const useStyles = makeStyles((theme) => ({
@@ -73,6 +74,24 @@ function Features() {
               alt="heart with connections to DigiBeat Logo"
               image={IMG2}
             />
+          </div>
+          </Card>
+          <br></br>
+          <Card className='cardPositions4' class='row'>
+          <div className='media' class='col-lg-6'>
+            <CardMedia
+              component="img"
+              alt="heart with connections to DigiBeat Logo"
+              image={IMG3}
+            />
+          </div>
+          <div className='media2' class='col-lg-6 flex-row'>
+          <h1 className='title3'>Winston AI</h1>
+            <h2 className='subTitle'>Integration with Winston AI allows for an unparalleled understanding between a patient and their health. </h2>
+            <p className='ptag'>• Augmented reality guides patients through the exam process with a series of color-coded touch points.</p>
+            <p className='ptag'>• Segmentation of heart and lung readings are performed in real time, with key insights automatically highlighted to determine if an abnormality or disease is present.</p>
+            <p className='ptag'>• Biometric data for heart rate; respiration rate, temperature, patient orientation, and auscultation site are automatically displayed in-app and to improve future disease analysis.</p>
+            <p className='ptag'>• Improved consistency and ease of access to auscultation exams leads to enhanced identification of elevated Pulmonary artery pressure, signs of Coronary Artery Disease, Heart Failure Classification, and a host of other key health insights.</p>
           </div>
           </Card>
         <br></br>
