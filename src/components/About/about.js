@@ -68,6 +68,7 @@ const theme = createTheme();
 
 export default function About() {
     const [isHovering, setIsHovering] = useState(false);
+
     return (
         <ThemeProvider theme={theme}>
             <main>
@@ -188,7 +189,7 @@ export default function About() {
                     {/* End hero unit */}
                     {/* Start the team page */}
                     <Typography variant="h2" align="center">Meet The Team</Typography>
-                    <Grid container spacing={3}>
+                    <Grid container spacing={3} >
                             <Grid class='row'>
                                 <Card  class='col-lg-4'>
                                     <CardMedia
@@ -196,6 +197,7 @@ export default function About() {
                                         sx={{
                                             // 16:9
                                             pt: '56.25%',
+                                            ml: 'none'
                                         }}
                                         image={winston}
                                         alt="random"
@@ -240,6 +242,11 @@ export default function About() {
                                         sx={{
                                             // 16:9
                                             pt: '56.25%',
+                                            // pl: '20%',
+                                        //     ml: '30%'
+                                        // }}
+                                        // lg={{
+                                        //     ml:'30%'
                                         }}
                                         image={karl}
                                         alt="random"
@@ -247,7 +254,8 @@ export default function About() {
                                         onMouseLeave={() => setIsHovering(false)}
                                     />
                                     <CardContent sx={{ flexGrow: 1 }}>
-                                        <Typography gutterBottom variant="h5" component="h2">
+                                        <Typography gutterBottom variant="h5" component="h2" //marginLeft='25%' paddingLeft='25%' 
+                                        >
                                           Karl Dockendorf
                                         </Typography>
                                         <Typography>CTO</Typography>
@@ -257,11 +265,15 @@ export default function About() {
                                     </CardContent>
                                 </Card>
                                 <Card>
-                                    <CardContent  className='aboutEm'>
+                                    <CardContent  className='aboutEm' class='row'>
+                                        <div class='col-lg-6'>
                                         <Typography>Arash Samimi - Regulatory/Quality Engineer</Typography>
                                         <Typography>Calvin Bond - Electrical/Mechanical Engineer</Typography>
+                                        </div>
+                                        <div className='column2' class='col-lg-6'>
                                         <Typography>Brandon Popp - Systems Analyst/IT</Typography>
                                         <Typography>Kaylee Stevens - Graphic Designer/Developer</Typography>
+                                        </div>
                                     </CardContent>
                                 </Card>
                             </Grid>
