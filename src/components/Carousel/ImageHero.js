@@ -64,7 +64,7 @@ const ImageHero = ({ slides }) => {
                                     <div className='content'>
                                         <h2>{pictures.heading}</h2>
                                         <hr></hr>
-                                        <p className='pTag'>{pictures.desc}</p>
+                                        <p className='tag'>{pictures.desc}</p>
                                     </div>
                                 </div>
                             )}

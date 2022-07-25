@@ -4,9 +4,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: left;
     width: 30%;
     margin-left: 55px;
-    padding: 2rem;
+    padding: 1rem;
     background: rgba(238, 229, 233, 0.9);
     border-radius: 5px;
     border-style: solid;
@@ -42,9 +43,9 @@
 }
 
 hr {
-    height: 4px;
+    height: 5px;
     color: #CDC6AE;
-    width: 50%;
+    width: 40%;
 }
 
 /** top text edit**/
@@ -113,6 +114,10 @@ hr {
       margin-left: 50px;
   }
 
-  .pTag {
-      font-size: 16px;
+  .tag {
+      text-align: left;
+      padding: none;
+      margin-left: 0;
+      margin-right: 0;
   }
+

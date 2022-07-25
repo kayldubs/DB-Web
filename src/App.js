@@ -13,6 +13,7 @@ import { SliderData } from './components/Slider-2/SliderData';
 import ImageHero from './components/Carousel/ImageHero';
 import { HeroData } from './components/Carousel/HeroData';
 import Faq from './components/FAQ/Faq.js';
+import About from './components/About/about';
 // import Payer from './components/Payer';
 // import Physician from './components/Physician';
 import Footer from './components/Footer';
@@ -89,12 +90,14 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
               <Route exact path="/"> 
                 <ImageHero slides={HeroData} /> 
                 <ImageSlider slides={SliderData} menu={TextData}/>
-                <Features currentCategory={currentCategory} /> 
-                <Form path="contactForm" />
+                <Features currentCategory={currentCategory} />
+                <Form></Form>
               </Route> 
+              <Route  exact path="/contactForm"> <Form/> </Route>
             {/* <Route exact path="/Payer" component={Payer} /> */}
             {/* <Route exact path="/Physician" component={Physician} /> */}
             <Route exact path="/faq"> <Faq/> </Route>
+            <Route exact path="/about"> <About/> </Route>
             </Switch>
           <Footer />
         {/* </Provider> */}

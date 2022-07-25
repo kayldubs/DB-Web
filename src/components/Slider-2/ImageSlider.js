@@ -16,7 +16,9 @@ const useStyles = makeStyles((theme) => ({
     featureCard: {
       fontSize:'40px', 
       fontFamily:'Source San Pro, sans-serif',
+      fontWeight:'Bold',
       paddingTop: '50px',
+      paddingBottom: '50px',
       display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -25,12 +27,12 @@ const useStyles = makeStyles((theme) => ({
         
     },
     featureSubtext: {
-      paddingTop: "80px",
+      paddingTop: '80px',
       margin: 'auto',
-      maxWidth: '50%',
+      maxWidth: '100%',
       height: "100%",
-      textAlign: 'center',
-      fontSize:'18px',
+      textAlign:'center',
+      fontSize:'20px',
       fontFamily:'Source San Pro, sans-serif',
     },
     keyFeatures: {
@@ -68,16 +70,21 @@ if (!Array.isArray(slides) || slides.length <= 0) {
 
     return (
     <section className='row'>
-        <h1 className={classes.keyFeatures}>Key Features</h1>
-      <Card varient="outlined" className='col-lg-6 info-plane'>
         <h1 className={classes.featureCard}>The future of medical examinations</h1>
+      <Card varient="outlined" className='col-lg-6 info-plane'>
+        
         <div className={classes.featureSubtext}>
-        <h2>Goodbye Analog, Hello Digital</h2>
-        <p>Digibeat offers an innovative improvements to the traditional stethoscope exam.</p>
-        <h2>Timeless Pratice, Fresh Approach</h2>
-        <p>Eliminate inaccuracies in exams while simultaneously streamlining the process</p>
-        <h2>Doctor Designed, Patient Approved</h2>
-        <p>Created with a physician’s workflow in mind, reliability and ease of use are at the forefront of this system.</p>
+        <h2>DigiBeat's patented and intuitive design </h2>
+        <p className='desc'>Using wireless technology, our stethescope brings your health and patient accessibility into the modern age.</p>
+        <br></br>
+        <h2>Optimized remote patient monitoring</h2>
+        <p className='desc'>Never miss a beat with remote monitoring serving patients and providers alike.</p>
+        <br></br>
+        <h2>AI-Assisted detection of heartbeat abnormalities</h2>
+        <p className='desc'>AI-powered diagnosis identifies risks and provides timely alerts of patient statistics in real-time.</p>
+        <br></br>
+        <h2>Modern features for seamless usage</h2>
+        <p className='desc'>A reliable stethoscope with volume control, wireless connectivity, noise reduction, and dual streaming connection for accuracy.</p>
         </div>
       </Card>
       <br></br>

@@ -1,0 +1,14 @@
+.aboutEm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column; 
+} 
+
+.spacing {
+    /* padding: 5px; */
+}
