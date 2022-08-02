@@ -4,16 +4,16 @@ import { useState, useEffect } from "react";
 
 
 
-const useForm = (validate) => {
+const useForm = (callback, validate) => {
     const [values, setValues ] = useState({
         name:'',
         email:'',
         job:'',
-        organization:''
+        phone:''
     })
     // validation 
     const [errors, setErrors] = useState({})
-
+    //form useState submittion function
     const [isSubmitting, setIsSubmitting] = useState(false);
 
 
@@ -35,14 +35,14 @@ const useForm = (validate) => {
         setIsSubmitting(true);
     };
 
-    // useEffect(() => {
-    //     // if(Object.keys(errors).length === 0 && 
-    //     // isSubmitting) {
-    //     //     callback()
-    //     // }
-    // },
-    // // [errors]
-    // );
+    useEffect(() => {
+         if(Object.keys(errors).length === 0 && 
+         isSubmitting) {
+            callback()
+         }
+    },
+     [errors]
+    );
     return { handleChange, values, handleSubmit, errors };
 };
 

@@ -12,7 +12,7 @@ import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import './footer.css'
 
-import logo  from '../../assests/imgs/DB_Logo.pdf';
+import logo  from '../../assests/imgs/DBSoloLogo.svg';
 
 function Copyright() {
   return (
@@ -68,9 +68,15 @@ function Footer() {
       <div>
           <Card>
               <CardMedia
+              sx={{
+                '& .MuiCard-root': {
+                  style:'image'
+                }
+              }}
               component='logo'
-              alt='DigiBeat logo'
               image={logo}
+              alt='DigiBeat logo'
+              
               />
           </Card>
       </div>

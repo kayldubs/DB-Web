@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SignUp from './SignUp';
 import Success from './Success';
 import './contact.css';
-import formIMG from '../../assests/imgs/device.svg'
+import formIMG from '../../assests/imgs/formIMG.svg'
 
 
 
@@ -16,10 +16,8 @@ function Form() {
         <>
         <div className='form-container'>
             <span className='close-btn'>x</span>
-        <div className='form-content-left'>
-            <img src={formIMG} alt='talking people' 
+            <img src={formIMG} alt='phone displaying welcome to digibeat with the logo' 
             className='form-img' />
-        </div>
         {!isSubmitted ? <SignUp submitForm={subitForm} /> 
             : <Success />}
         </div>
@@ -27,4 +25,4 @@ function Form() {
     );
 };
 
-export default Form
+export default Form;

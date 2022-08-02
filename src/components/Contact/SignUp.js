@@ -1,11 +1,11 @@
 import React from 'react';
 import useForm from './useForm';
-// import validate from './validateInfo';
+import validate from './validateInfo';
 import './contact.css';
 
 const SignUp = ({submitForm}) => {
-
-    const {handleChange, values, handleSubmit, errors } = useForm(submitForm);
+ //importing functions from useForm.js
+    const {handleChange, values, handleSubmit, errors } = useForm(submitForm, validate);
     return (
         <div className='form-contact-right'>
             <form className='form' onSubmit={handleSubmit}>
@@ -37,8 +37,8 @@ const SignUp = ({submitForm}) => {
                     {errors.email && <p>{errors.email}</p>}
                 </div>
                 <div className='form-inputs'>
-                    <label htmlFor='job' className='form-label'>Job Title</label>
-                    <input 
+                    <label htmlFor='job' className='form-label'>I am a:</label>
+                    <select 
                         type='text' 
                         name='job' 
                         className='form-input'
@@ -46,16 +46,17 @@ const SignUp = ({submitForm}) => {
                         value={values.job}
                         onChange={handleChange}
                         />
+                        {/* <option value='Payer'>Payer</option> */}
                     {errors.job && <p>{errors.job}</p>}
                 </div>
                 <div className='form-inputs'>
-                    <label htmlFor='organization' className='form-label'>Organization</label>
+                    <label htmlFor='organization' className='form-label'>Phone Number</label>
                     <input 
                         type='text' 
-                        name='organization' 
+                        name='Phone Number' 
                         className='form-input'
-                        placeholder='Enter Your Organization'
-                        value={values.organization}
+                        placeholder='Enter Your Phone Number'
+                        value={values.phone}
                         onChange={handleChange}
                         />
                     {errors.organization && <p>{errors.organization}</p>}
