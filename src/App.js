@@ -93,11 +93,11 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
                 <Features currentCategory={currentCategory} />
                 <Form></Form>
               </Route> 
-              <Route  exact path="/contactForm"> <Form/> </Route>
+              <Route path="/contactForm"> <Form/> </Route>
             {/* <Route exact path="/Payer" component={Payer} /> */}
             {/* <Route exact path="/Physician" component={Physician} /> */}
-            <Route exact path="/faq"> <Faq/> </Route>
-            <Route exact path="/about"> <About/> </Route>
+            <Route path="/faq"> <Faq/> </Route>
+            <Route path="/about"> <About/> </Route>
             </Switch>
           <Footer />
         {/* </Provider> */}
