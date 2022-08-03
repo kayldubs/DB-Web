@@ -81,7 +81,7 @@ function App() {
 ]);
 const [currentCategory, setCurrentCategory] = useState(categories[0]);
   return(
-  // <ApolloProvider client={client}>
+  <ApolloProvider client={client}>
   <Router>
     <div className='App'> 
         {/* <Provider> */}
