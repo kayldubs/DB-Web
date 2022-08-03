@@ -9,6 +9,64 @@
     flex-direction: column; 
 } 
 
-.spacing {
+/* .spacing {
     /* padding: 5px; */
+
+
+.karl {
+    position: absolute;
 }
+
+.karl1 {
+    display: hidden;
+}
+
+.karl2 {
+    position: relative;
+    margin-right: 200px;
+    opacity: 0;
+    transition: opacity .25s;
+
+}
+
+.karl2:hover {
+    opacity: 1;
+}
+
+.cliff1 {
+    display: hidden;
+}
+
+.cliff2 {
+    position: relative;
+    margin-right: 200px;
+    opacity: 0;
+    transition: opacity .25s;
+
+}
+
+.cliff2:hover {
+    opacity: 1;
+}
+
+.win {
+    position: absolute;
+}
+
+.win1 {
+    display: hidden;
+}
+
+.win2 {
+    position: relative;
+    margin-right: 200px;
+    opacity: 0;
+    transition: opacity .25s;
+
+}
+
+.win2:hover {
+    opacity: 1;
+}
+
+
