@@ -26,37 +26,37 @@ import { TextData } from './components/Carousel/TextData';
 
 
 //Set up Apollo and GraphQL
-// import {
-//    ApolloClient,
-//   InMemoryCache,
-//   ApolloProvider,
-//   createHttpLink,
-//   // useQuery,
-//   // gql
-// } from "@apollo/client";
-//  import { Provider } from 'react-redux';
-// import { setContext } from '@apollo/client/link/context';
+import {
+   ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+  // useQuery,
+  // gql
+} from "@apollo/client";
+ import { Provider } from 'react-redux';
+import { setContext } from '@apollo/client/link/context';
 
 // //import graph QL for future back end linking
-// const httpLink = createHttpLink({
-//   uri: '/graphql',
-// });
-// const authLink = setContext((_, { headers }) => {
-//   const token = localStorage.getItem('id_token');
-//   return {
-//     headers: {
-//       ...headers,
-//       authorization: token ? `Bearer ${token}` : '',
-//     },
-//   };
-// });
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
+const authLink = setContext((_, { headers }) => {
+  const token = localStorage.getItem('id_token');
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : '',
+    },
+  };
+});
 
 
-// //Set up apollo
-// const client = new ApolloClient({
-//   link: authLink.concat(httpLink),
-//   cache: new InMemoryCache(),
-// });
+//Set up apollo
+const client = new ApolloClient({
+  link: authLink.concat(httpLink),
+  cache: new InMemoryCache(),
+});
 
 
 
