@@ -3,10 +3,7 @@
     width: 1000px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
     position: relative;
-    border-radius: 10px;
-    height: 600px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
     font-family: 'Source Sans Pro', sans-serif;
   }
   
@@ -20,24 +17,11 @@
     cursor: pointer;
   }
   
-  .form-content-left {
-    background: linear-gradient(
-      90deg,
-      rgb(39, 170, 225) 0%,
-      rgb(72, 98, 144) 100%
-    );
-    border-radius: 10px 0 0 10px;
-    position: relative;
-  }
-  
   .form-img {
-    width: 90%;
+    width: 100%;
     height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
+    position:center;
+    border-radius: 20px;
   }
   
   .form-img-2 {
@@ -45,15 +29,15 @@
     height: 90%;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 75%;
     transform: translate(-50%, -50%);
   }
   
-  .form-content-right {
+  /* .form-content-right {
     border-radius: 0 10px 10px 10;
-    position: relative;
-    background: #486290;
-  }
+    position: absolute;
+    transform: translate(-50%, -50%);
+  } */
   
   .form {
     position: absolute;
@@ -66,7 +50,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #486290;
     border-radius: 0px 10px 10px 0;
   }
   
@@ -75,17 +58,17 @@
     text-align: center;
     width: 80%;
     margin-bottom: 1rem;
-    color: #fff;
+    color: #486290;
   }
   
   .form-inputs {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     width: 80%;
   }
   
   .form-inputs p {
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    margin-top: 0.2rem;
     color: #f00e0e;
   }
   
@@ -93,7 +76,7 @@
     display: inline-block;
     font-size: 0.8rem;
     margin-bottom: 6px;
-    color: #fff;
+    color:black;
   }
   
   .form-input {
@@ -123,7 +106,7 @@
     );
     outline: none;
     border: none;
-    color: #fff;
+    color:black;
     font-size: 1rem;
   }
   
