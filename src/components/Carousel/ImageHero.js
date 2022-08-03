@@ -66,6 +66,11 @@ const ImageHero = ({ slides }) => {
                                         <hr></hr>
                                         <p className='tag'>{pictures.desc}</p>
                                     </div>
+                                    {/* <div className='content2'>
+                                        <h2>{pictures.heading2}</h2>
+                                        <hr></hr>
+                                        <p className='tag'>{pictures.desc2}</p>
+                                    </div> */}
                                 </div>
                             )}
                         </div>

@@ -73,10 +73,9 @@ function Footer() {
                   style:'image'
                 }
               }}
-              component='logo'
               image={logo}
+              component='logo'
               alt='DigiBeat logo'
-              
               />
           </Card>
       </div>

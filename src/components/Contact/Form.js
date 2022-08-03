@@ -14,13 +14,13 @@ function Form() {
     }
     return (
         <>
-        <div className='form-container'>
-            <span className='close-btn'>x</span>
-            <img src={formIMG} alt='phone displaying welcome to digibeat with the logo' 
-            className='form-img' />
-        {!isSubmitted ? <SignUp submitForm={subitForm} /> 
-            : <Success />}
-        </div>
+            <div className='form-container'>
+                {/* <span className='close-btn'>x</span> */}
+                <img src={formIMG} alt='phone displaying welcome to digibeat with the logo'
+                    className='form-img' />
+                {!isSubmitted ? <SignUp submitForm={subitForm} />
+                    : <Success />}
+            </div>
         </>
     );
 };

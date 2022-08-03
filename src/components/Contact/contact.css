@@ -33,11 +33,11 @@
     transform: translate(-50%, -50%);
   }
   
-  .form-content-right {
+  /* .form-content-right {
     border-radius: 0 10px 10px 10;
     position: absolute;
     transform: translate(-50%, -50%);
-  }
+  } */
   
   .form {
     position: absolute;
@@ -62,13 +62,13 @@
   }
   
   .form-inputs {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     width: 80%;
   }
   
   .form-inputs p {
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    margin-top: 0.2rem;
     color: #f00e0e;
   }
   

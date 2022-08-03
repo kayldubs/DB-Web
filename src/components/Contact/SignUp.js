@@ -44,9 +44,12 @@ const SignUp = ({submitForm}) => {
                         className='form-input'
                         placeholder='Enter Your Job Title'
                         value={values.job}
-                        onChange={handleChange}
-                        />
-                        {/* <option value='Payer'>Payer</option> */}
+                        onChange={handleChange}>
+                        <option value='Payer'>Payer</option>
+                        <option value='Physician'>Physician</option>
+                        <option value='Patient'>Patient</option>
+                        </select>
+                        
                     {errors.job && <p>{errors.job}</p>}
                 </div>
                 <div className='form-inputs'>
