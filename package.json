@@ -1,7 +1,7 @@
 {
   "name": "digibeat-web",
   "version": "0.1.0",
-  "main": "server/server.js",
+  
   "private": true,
   "engines": {
     "node": "16.13.2"
@@ -44,7 +44,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node server/server.js",
+    "start": "node index.js",
     "build": "react-scripts build",
     "server": "nodemon server/server.js",
     "test": "react-scripts test",
