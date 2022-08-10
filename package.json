@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "14.18.0"
+    "node": "16.13.2"
   },
   "dependencies": {
     "@apollo/client": "^3.6.2",
@@ -42,7 +42,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node app",
+    "predepoly": "npm run build",
+    "deploy":"gh-pages -d build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "server": "nodemon server.js",
     "test": "react-scripts test",
@@ -66,5 +68,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://DigiBeat.com"
+  "homepage":"https://kayldubs.github.io/DB-Web",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
