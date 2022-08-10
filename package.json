@@ -1,6 +1,7 @@
 {
   "name": "digibeat-web",
   "version": "0.1.0",
+  "main": "server/server.js",
   "private": true,
   "engines": {
     "node": "16.13.2"
@@ -27,6 +28,7 @@
     "graphql": "^16.4.0",
     "material-paper": "0.0.8",
     "material-ui-image": "^3.3.2",
+    "nodemon": "^2.0.19",
     "react": "^18.1.0",
     "react-bootstrap": "^2.3.1",
     "react-dom": "^18.1.0",
@@ -43,9 +45,9 @@
   },
   "scripts": {
     "predepoly": "npm run build",
-    "deploy":"gh-pages -d build",
-    "start": "nodemon --exec babel-node server/server.js",
-    "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
+    "start": "node server/server.js",
+    "build": "cd src && npm run build",
     "server": "nodemon server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -68,7 +70,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage":"https://digibeat.com",
+  "homepage": "https://digibeat.com",
   "devDependencies": {
     "gh-pages": "^4.0.0"
   }
