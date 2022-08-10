@@ -44,7 +44,7 @@
   "scripts": {
     "predepoly": "npm run build",
     "deploy":"gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "server": "nodemon server.js",
     "test": "react-scripts test",
@@ -68,7 +68,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage":"https://kayldubs.github.io/DB-Web",
+  "homepage":"https://digibeat.com",
   "devDependencies": {
     "gh-pages": "^4.0.0"
   }
