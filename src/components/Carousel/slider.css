@@ -14,25 +14,8 @@
     border-color: #C1C1C1;
     animation: slide-up 1s ease 0.5s;
     animation-fill-mode: forwards;
+    
 }
-
-/* .content2 {
-    position: absolute;
-    top: 23rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    width: 30%;
-    margin-left: 100px;
-    padding: 1rem;
-    background: rgba(238, 229, 233, 0.9);
-    border-radius: 5px;
-    border-style: solid;
-    border-color: #C1C1C1;
-    animation: slide-up 1s ease 0.5s;
-    animation-fill-mode: forwards;
-} */
 
 @keyframes slide-up {
     0% {
@@ -92,8 +75,8 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -150px;
-    margin:auto;
+    top: -170px;
+    margin-bottom:10px;
     border-radius: 5px;
   
   }
@@ -110,11 +93,12 @@ hr {
   .hero-image {
     width: 1400px;
     height: 750px;
-    border-radius: 10px;
+    border-radius: 23px;
     transition: all 0.5s ease;
     display: flex;
    justify-content: center;
    animation: fadeIn 2s; 
+   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   
   }
 
@@ -137,5 +121,9 @@ hr {
       padding: none;
       margin-left: 0;
       margin-right: 0;
+  }
+
+  .everything {
+      height: 1100px;
   }
 

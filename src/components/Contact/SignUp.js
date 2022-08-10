@@ -1,11 +1,12 @@
 import React from 'react';
 import useForm from './useForm';
 import validate from './validateInfo';
+import { TextField } from '@mui/material';
 import './contact.css';
 
 const SignUp = ({submitForm}) => {
  //importing functions from useForm.js
-    const {handleChange, values, handleSubmit, errors } = useForm(submitForm, validate);
+    const {handleChange, values, handleSubmit, errors, value, setValue } = useForm(submitForm, validate);
     return (
         <div className='form-contact-right'>
             <form className='form' onSubmit={handleSubmit}>
@@ -48,19 +49,22 @@ const SignUp = ({submitForm}) => {
                         <option value='Payer'>Payer</option>
                         <option value='Physician'>Physician</option>
                         <option value='Patient'>Patient</option>
+                        <option value='Other'>Other</option>
                         </select>
+                    {value==="Other"&& <TextField type='text'/>}
                         
                     {errors.job && <p>{errors.job}</p>}
                 </div>
                 <div className='form-inputs'>
-                    <label htmlFor='organization' className='form-label'>Phone Number</label>
-                    <input 
-                        type='text' 
-                        name='Phone Number' 
+                    <label htmlFor='phone' className='form-label'>Phone Number</label>
+                    <input  
+                        name='phone' 
                         className='form-input'
                         placeholder='Enter Your Phone Number'
-                        value={values.phone}
-                        onChange={handleChange}
+                        defaultCountry='US'
+                        value={value}
+                        // control={values.phone}
+                        onChange={setValue}
                         />
                     {errors.organization && <p>{errors.organization}</p>}
                 </div>
