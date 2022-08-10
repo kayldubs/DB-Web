@@ -71,7 +71,7 @@ export default function About() {
 
     return (
         <ThemeProvider theme={theme}>
-            <main>
+            <main className='aboutBody'>
                 {/* Hero unit */}
                 <Box
                     sx={{
@@ -86,7 +86,7 @@ export default function About() {
                             variant="h2"
                             align="center"
                             color="text.primary"
-                            gutterBottom
+                            
                         >
                             What We Do
                         </Typography>
@@ -189,7 +189,7 @@ export default function About() {
                     {/* End hero unit */}
                     {/* Start the team page */}
                     <Typography variant="h2" align="center">Meet The Team</Typography>
-                    <Grid container spacing={3} >
+                    <Grid>
                             <Grid class='row'>
                                 <Card  class='col-lg-4'>
                                     <CardMedia
@@ -197,7 +197,7 @@ export default function About() {
                                          sx={{
                                         //     // 16:9
                                             pt: '50%',
-                                            mr: '150%'
+                                            mr: '100%'
                                          }}
                                         image={winston}
                                         alt="random"
@@ -206,7 +206,7 @@ export default function About() {
                                         // onMouseLeave={() => setIsHovering(false)}
                                     />
                                     <CardContent sx={{ flexGrow: 1 }}>
-                                        <Typography gutterBottom variant="h5" component="h2">
+                                        <Typography variant="h5" component="h2">
                                            Winston T. Richards, MD
                                         </Typography>
                                         <Typography>CMO</Typography>
@@ -272,7 +272,7 @@ export default function About() {
                                         {/* )} */}
                                     </CardContent>
                                 </Card>
-                                <Card>
+                                <Card className='bottomEmployees'>
                                     <CardContent  className='aboutEm' class='row'>
                                         <div class='col-lg-6'>
                                         <Typography>Arash Samimi - Regulatory/Quality Engineer</Typography>

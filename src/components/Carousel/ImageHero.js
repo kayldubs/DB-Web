@@ -36,7 +36,7 @@ const ImageHero = ({ slides }) => {
     }
 
     return (
-        <div>
+        <div className='everything'>
             <div className='text-hero'>
                 <h1>The World's Most</h1>
                 {HeroData.map((header, index) => {
