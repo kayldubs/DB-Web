@@ -35,7 +35,7 @@ import {
   // gql
 } from "@apollo/client";
  import { Provider } from 'react-redux';
-//import store from '../app/store'
+import store from '../app/store'
 import { setContext } from '@apollo/client/link/context';
 
 // //import graph QL for future back end linking
@@ -85,8 +85,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
   <ApolloProvider client={client}>
   <Router>
     <div className='App'> 
-    {/* store={store} */}
-        <Provider>
+        <Provider store={store}>
           <Nav />
           <Switch>
               <Route exact path="/"> 
