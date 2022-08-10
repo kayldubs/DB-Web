@@ -27,7 +27,7 @@ import './about.css';
 // import images
 import cliff from '../../assests/imgs/cliff.svg';
 import winston from '../../assests/imgs/winston.svg';
-import karl from '../../assests/imgs/karl.svg';
+import karll from '../../assests/imgs/karl.svg';
 
 const tiers = [
     {
@@ -252,9 +252,11 @@ export default function About() {
                                              
                                             //  pt: '50%',
                                         }}
-                                        image={karl}
+                                        image={karll}
                                         alt="random"
                                         className='karl1'
+
+
                                         // onMouseEnter={() => setIsHovering(true)}
                                         // onMouseLeave={() => setIsHovering(false)}
                                     />
